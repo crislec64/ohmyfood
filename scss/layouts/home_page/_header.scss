@@ -1,0 +1,11 @@
+/* logo */
+.logo {
+    height: 3.938rem;
+    @include shadow;
+    @include box;
+
+    img {
+        width: 10.5rem;
+        padding: 1em;
+    }
+}

@@ -1,0 +1,40 @@
+$black: black;
+$color-primary: rgb(147, 86, 220);
+$color-secondary: #ff79da;
+$color-icon: #353535;
+$icon: #7e7e7e;
+$white: white;
+
+
+/*  **************  background  ************/
+$background-localisation: #eaeaea;
+$background-reservation: #f6f6f6;
+$background-localisation_text: transparent;
+$background-footer: #353535;
+/*  **************  gradient : button & heart  ************/
+
+$linear-gradient:linear-gradient(to top, $color-primary -11.44%, $color-secondary 123.93%);
+$linear-gradient-light:linear-gradient(to top,lighten($color-primary,5%) -11.44%, lighten( $color-secondary, 5%) 123.93%);
+
+/*  **************  label  ************/
+$background-label:#99e2d0;
+$color-label:#008766;
+
+/*  **************    shadow    ***************/
+$color-shadow: rgba(0, 0, 0, 0.125);
+$lighten-shadow:0;
+$lighten-shadow_fonctionnement:60;
+$lighten-shadow_reservation:30;
+$shadow: 0rem 0.25rem 0.25rem 0.125rem;
+$shadow_menu: 0rem 0.251rem 0.94rem 0px rgba(0, 0, 0, 0.10);
+
+
+
+/* *************** Border-radius *************/
+$bd-rad: 1.563rem;       //25px
+$bd-rad_fonct: 1.25rem;  //20px
+$bd-rad_img:1.125rem;    //18px
+$bd-radius_menu: 0.938rem; //15px
+
+/* *************** Border-color *************/
+$bd-color_transp: transparent;

@@ -1,0 +1,51 @@
+@mixin shadow {
+    box-shadow: $shadow lighten($color-shadow, $lighten-shadow);
+    -webkit-box-shadow: $shadow lighten($color-shadow, $lighten-shadow);
+    -moz-box-shadow: $shadow lighten($color-shadow, $lighten-shadow);
+}
+
+@mixin shadow-fonctionnement {
+    box-shadow: $shadow lighten($color-shadow, $lighten-shadow_fonctionnement);
+    -webkit-box-shadow: $shadow lighten($color-shadow, $lighten-shadow_fonctionnement);
+    -moz-box-shadow: $shadow lighten($color-shadow, $lighten-shadow_fonctionnement);
+}
+
+@mixin shadow-reservation {
+    box-shadow: $shadow darken($color-shadow, $lighten-shadow_reservation);
+    -webkit-box-shadow: $shadow darken($color-shadow, $lighten-shadow_reservation);
+    -moz-box-shadow: $shadow darken($color-shadow, $lighten-shadow_reservation);
+}
+
+@mixin btn{
+    @include box;
+    @include shadow;
+    border: transparent;
+    cursor:pointer
+    
+}
+@mixin btn-base{
+    @include box;
+    @include shadow;
+    border: transparent;
+    cursor: context-menu;
+}
+
+@mixin box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: unset;
+    
+}
+
+@mixin box_fonct {
+    @include box;
+    flex-direction: column;
+    align-items: start;
+    margin: unset;
+}
+
+@mixin container_box {
+    @include box_fonct;
+}

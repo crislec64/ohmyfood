@@ -1,0 +1,75 @@
+.restaurants {
+    @include box;
+    background-color: $background-reservation;
+    padding-top: 3.375rem;
+
+    &_box{
+        @include box_fonct;
+        
+    }
+
+    &-title {
+        
+        margin-left: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &-cards {
+        @include box_fonct;
+        margin: 0 0 0 1.063rem;
+
+        &>a {
+            @include box_fonct;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &_container {
+        @include box_fonct;
+        margin: unset;
+        width: 100%;
+
+    }
+
+    &_heart {
+        @include box_fonct;
+        margin: unset;
+        position: relative;
+        bottom: 3.75rem;
+        left: 18.75rem;
+        z-index: 1;
+    }
+
+    &_card {
+        @include box_fonct;
+        margin: unset;
+        background-color: $white;
+        border-radius: 0.938rem;
+
+        &>img {
+            width: 21.25rem;
+            height: 10.875rem;
+            border-radius: 0.938rem 0.938rem 0 0;
+            object-fit: cover;
+        }
+
+        &_1,
+        &_3,
+        &_4 {  
+            object-position: 0% 100%;
+        }
+        &_2{ 
+            object-position: 38% 62%;
+        }
+        
+        &-title {
+            margin: 1rem 0 0 0.813rem;
+        }
+
+        &-subtitle {
+            margin: 0.313rem 0 0.75rem 0.813rem;
+        }
+    }
+}
+

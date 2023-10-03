@@ -1,0 +1,51 @@
+.entete {
+    display: flex;
+
+    &>img {
+        max-width: 100%;
+        max-height: 25rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.menu {
+    border-radius: 2.5rem 2.5rem 0 0;
+    background-color: $background-reservation;
+    padding-bottom: 2.5rem;
+    
+    &_title {
+
+        &>h2 {}
+    }
+
+    &_section {
+
+        &>h3 {
+            margin-top: 2.5rem;
+        }
+
+    }
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        &_content {
+
+
+            &>p {}
+
+            &_price {}
+        }
+    }
+    
+    
+}
+.commander{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}

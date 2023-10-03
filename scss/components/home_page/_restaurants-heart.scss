@@ -1,0 +1,23 @@
+
+.solid {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 150ms;
+    transform: scale(1.05);
+
+    &:hover {
+        opacity: 1;
+        color: transparent;
+
+        &::before {
+            background-image: linear-gradient(to top,$color-secondary  -15.44%, $color-primary 120.93%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            
+        }
+    }  
+}
+.regular{
+    margin-right: -1.25rem;
+}

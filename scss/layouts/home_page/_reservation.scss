@@ -1,0 +1,24 @@
+.reservation {
+   @include box_fonct;
+    text-align: center;
+    background-color: $background-reservation;
+    align-items: center;
+    padding: 2.438rem 0 3.5625rem 0;
+    
+    &_title {
+       width: 17.188rem;
+ 
+       &>h2 {
+          margin-block:unset;
+       }
+    }
+ 
+    &_p {
+       width: 19.688rem;
+       margin-block-end: 1.688rem;
+       &>p{
+         margin-block-end: unset;
+       }
+    }
+ 
+ }

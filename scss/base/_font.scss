@@ -1,0 +1,93 @@
+body,
+html,
+button,
+input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.125em;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+.restaurants_card-subtitle {
+  font-size: 1.0625rem;
+}
+
+.restaurants_card-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.fonctionnement-container_number {
+  font-size: 0.886rem;
+}
+
+input,
+button,
+.footer_label {
+  font-size: 1rem;
+}
+
+footer {
+  color: $white;
+}
+
+.footer_logo {
+  font-family: 'Shrikhand', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+
+
+}
+
+.menu {
+  &_title {
+
+    &>h2 {
+      font-family: 'Shrikhand', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
+  }
+
+  &_section {
+
+    &>h3 {
+      font-size: 1rem;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+  }
+
+  &_container {
+    
+    &_content {
+      
+      &>h4{
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+      &>p {
+        font-size: 0.94rem;
+        font-weight: 300;
+      }
+
+      &_price {
+        font-size: 0.94rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.number {
+    @include box_fonct;
+    position: relative;
+    border-radius: 100%;
+    background-color: $color-primary;
+    color: white;
+    border: $bd-color_transp;
+    padding: 0.318rem 0 0.273rem 0.5rem;
+    z-index: 1;
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 1.5rem;
+}

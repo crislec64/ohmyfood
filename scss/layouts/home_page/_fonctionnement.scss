@@ -1,0 +1,12 @@
+.fonctionnement {
+    @include box_fonct;
+    padding: 3rem 0 4.25rem 0;
+
+    &-title {
+        margin-left: 1.25rem;
+        margin-bottom: 1.625rem;
+        width: 100%;
+    }
+}
+
+

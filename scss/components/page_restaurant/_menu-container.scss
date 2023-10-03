@@ -1,0 +1,67 @@
+.menu {
+    position: relative;
+    z-index: 1;
+    top: -3.25rem;
+
+    &_restaurant {
+       
+        padding: 2rem 0 0 1.063rem;
+        
+
+        &_heart {
+            @include box;
+            position: relative;
+            justify-content: flex-end;
+            top: -1rem;
+            margin-right: 3rem;
+            z-index: 1;
+            
+
+        }
+       
+        
+        
+
+        &_restaurant_title {
+            
+        }
+    }
+
+    &_container {
+
+        gap: 0.75rem;
+
+        &_box {
+            @include box;
+            justify-content: space-between;
+            padding: 0 0.938rem;
+            border-radius: 0.938rem;
+        }
+
+        &_content {
+            @include box_fonct;
+
+            &>h4 {
+                margin: 0;
+            }
+
+            &>p {
+
+                margin: 0.313rem 0;
+                margin-bottom: 0%;
+            }
+
+            &_price {
+                position: relative;
+                margin: 0%;
+            }
+
+        }
+
+
+    }
+
+    &_section {
+        margin: 0 0.813rem 0 0.813rem;
+    }
+}
