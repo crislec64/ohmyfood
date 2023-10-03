@@ -22,9 +22,7 @@
         
         
 
-        &_restaurant_title {
-            
-        }
+        
     }
 
     &_container {
@@ -60,8 +58,22 @@
 
 
     }
+&_title{
+    position: relative;
+    text-transform: uppercase;
 
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $background-uppercase;
+        height: 0.188rem;
+        width: 2.5rem;
+        top: 1.5rem;
+    }
+}
     &_section {
         margin: 0 0.813rem 0 0.813rem;
+        
     }
 }

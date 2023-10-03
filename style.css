@@ -267,7 +267,7 @@ footer {
   line-height: normal;
 }
 
-.menu_title > h2 {
+.menu_restaurant_title > h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
@@ -611,6 +611,19 @@ footer {
 .menu_container_content_price {
   position: relative;
   margin: 0%;
+}
+.menu_title {
+  position: relative;
+  text-transform: uppercase;
+}
+.menu_title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #99e2d0;
+  height: 0.188rem;
+  width: 2.5rem;
+  top: 1.5rem;
 }
 .menu_section {
   margin: 0 0.813rem 0 0.813rem;
