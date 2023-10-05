@@ -40,8 +40,13 @@
         background-image: $background-reservation;
         height: 4.5rem;
         margin-left: 0.75rem;
-       
-      
+        @media (64em <= width <= 90em){
+            width: 18rem;
+        }
+        @media (width <= 90em ){
+            width: 20.155rem;
+        }
+    
     }
     
     .btn_menu{
