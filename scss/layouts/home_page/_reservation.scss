@@ -7,6 +7,9 @@
     
     &_title {
        width: 17.188rem;
+       @media (width >= 64em) {
+         width: auto;
+       }
  
        &>h2 {
           margin-block:unset;
@@ -16,6 +19,9 @@
     &_p {
        width: 19.688rem;
        margin-block-end: 1.688rem;
+       @media (width >= 64em) {
+         width: auto;
+       }
        &>p{
          margin-block-end: unset;
        }

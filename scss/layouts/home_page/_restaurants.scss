@@ -3,13 +3,16 @@
     background-color: $background-reservation;
     padding-top: 3.375rem;
 
-    &_box{
+    &_box {
         @include box_fonct;
-        
+
+        @media (64em <= width) {
+            padding-left: 10%;
+        }
     }
 
     &-title {
-        
+
         margin-left: 1.25rem;
         margin-bottom: 1.25rem;
     }
@@ -17,6 +20,10 @@
     &-cards {
         @include box_fonct;
         margin: 0 0 0 1.063rem;
+
+        @media (64em <= width <=90em) {
+            flex-direction: row;
+        }
 
         &>a {
             @include box_fonct;
@@ -30,6 +37,16 @@
         margin: unset;
         width: 100%;
 
+        &_box {
+            @media (64em <= width ) {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                flex-wrap: wrap;
+                margin-bottom: 1.875rem;
+            }
+        }
+
     }
 
     &_heart {
@@ -39,6 +56,10 @@
         bottom: 3.75rem;
         left: 18.75rem;
         z-index: 1;
+        @media (width >= 64em) {
+            left: -10rem;
+            bottom: -18rem;
+          }
     }
 
     &_card {
@@ -52,17 +73,23 @@
             height: 10.875rem;
             border-radius: 0.938rem 0.938rem 0 0;
             object-fit: cover;
+            @media (width >=64em) {
+                width: 30.625rem;
+                height: 15.688rem;
+            }
+            
         }
 
         &_1,
         &_3,
-        &_4 {  
+        &_4 {
             object-position: 0% 100%;
         }
-        &_2{ 
+
+        &_2 {
             object-position: 38% 62%;
         }
-        
+
         &-title {
             margin: 1rem 0 0 0.813rem;
         }
@@ -72,4 +99,3 @@
         }
     }
 }
-
