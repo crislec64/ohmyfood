@@ -1,0 +1,20 @@
+.header {
+    &_arrow{
+        visibility: hidden;
+    }
+    @media (width >=64em) {
+        &_arrow {
+            visibility: visible;
+            margin: 1.875rem 0 0 1.063rem;
+            text-align: start;
+            &>i{
+                color:$black;  
+            }
+        }
+
+        &_box {
+            display: flex;
+        }
+
+    }
+}

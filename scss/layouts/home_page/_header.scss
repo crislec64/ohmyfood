@@ -1,12 +1,12 @@
 /* logo */
 .logo {
     height: 3.938rem;
-    @include shadow;
     @include box;
 
     @media (width >=64em) {
         height: 6rem;
     }
+    
 
     img {
         width: 10.5rem;

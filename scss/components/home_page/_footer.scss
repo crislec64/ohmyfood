@@ -1,6 +1,6 @@
 .footer {
     @include box;
-   
+    
 
     &_box {
         @include box_fonct;
@@ -10,7 +10,10 @@
             color:$white;
             text-decoration: none;
         }
-
+        @media (width >= 64em) {
+            flex-direction: row-reverse;
+            gap: 3rem;
+          }
     }
 
 
@@ -33,6 +36,10 @@
     &_container {
         @include box-fonct;
         gap: 0.438rem;
+        @media (width >= 64em) {
+            flex-direction: row;
+            gap:1rem;
+          }
     }
 
     &_logo {
@@ -59,4 +66,7 @@
         }
 
     }
+}
+.partenaire{
+    padding-right: 2rem;
 }

@@ -9,6 +9,9 @@ footer{
     background-color: $background-footer;
     width: 100%;
     height: 186px;
+    @media (width >= 64em) {
+        align-items: flex-end;
+      }
     
     
 }
