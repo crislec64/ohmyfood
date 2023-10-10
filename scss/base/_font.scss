@@ -5,7 +5,8 @@ input {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
-.location_text{
+
+.location_text {
   font-weight: normal;
   font-style: normal;
 }
@@ -91,7 +92,7 @@ footer {
     &_content {
 
       &>h4 {
-        font-size: 1.125rem;
+        font-size: 1.125em;
         font-weight: 500;
       }
 
@@ -101,8 +102,11 @@ footer {
       }
 
       &_price {
-        font-size: 0.94rem;
-        font-weight: 700;
+        &>p {
+          font-size: 0.94rem;
+          font-weight: 700;
+          color:$background-footer;
+        }
       }
     }
   }

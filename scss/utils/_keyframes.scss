@@ -1,0 +1,34 @@
+
+@keyframes delay { 
+    0% {
+        transform: translateX(500px) skewX(50deg) scale(0);
+        opacity:0;
+    }
+    100% {
+        transform: translateX(0) skewX(0deg) scale(1);
+        opacity:1;
+    }
+}
+@keyframes delayCheck { 
+    0% {
+        transform: translateX(500px);
+        
+    }
+    100% {
+        transform: translateX(0);
+        
+    }
+}
+
+
+@keyframes visible {
+			
+    0% {
+        transform:rotateX(30deg) translateX(30px) skewX(30deg) scale(0);
+        opacity:0;
+    }
+    100% {
+        transform:rotateX(0deg) translateX(0) skewX(0deg) scale(1);
+        opacity:1;
+    }
+}

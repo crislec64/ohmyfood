@@ -1,7 +1,15 @@
 .header {
     &_arrow{
-        visibility: hidden;
+        margin: 1.4rem 0 0 1.063rem;
+        &>i.fa-2x {
+            font-size: 1em;
+        }
+
+
     }
+    &_box {
+            display: flex;
+        }
     @media (width >=64em) {
         &_arrow {
             visibility: visible;
