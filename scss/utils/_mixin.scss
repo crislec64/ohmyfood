@@ -16,14 +16,14 @@
     -moz-box-shadow: $shadow darken($color-shadow, $lighten-shadow_reservation);
 }
 
-@mixin btn{
+@mixin btn {
     @include box;
     @include shadow;
     border: transparent;
-    cursor:pointer
-    
+    cursor: pointer
 }
-@mixin btn-base{
+
+@mixin btn-base {
     @include box;
     @include shadow;
     border: transparent;
@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     margin: unset;
-    
+
 }
 
 @mixin box_fonct {
@@ -48,4 +48,25 @@
 
 @mixin container_box {
     @include box_fonct;
+}
+
+@mixin visible {
+    animation-name: visible;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    
+
+}
+
+@mixin delay {
+    animation-name: delay;
+    animation-duration: 700ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode:forwards;
 }

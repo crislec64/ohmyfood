@@ -6,9 +6,16 @@ input {
   font-weight: 500;
 }
 
+.location_text {
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
   font-size: 1.125em;
   font-weight: 300;
+  color: $icon;
+  font-style: normal;
 }
 
 h2 {
@@ -85,7 +92,7 @@ footer {
     &_content {
 
       &>h4 {
-        font-size: 1.125rem;
+        font-size: 1.125em;
         font-weight: 500;
       }
 
@@ -95,8 +102,11 @@ footer {
       }
 
       &_price {
-        font-size: 0.94rem;
-        font-weight: 700;
+        &>p {
+          font-size: 0.94rem;
+          font-weight: 700;
+          color:$background-footer;
+        }
       }
     }
   }
