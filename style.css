@@ -39,9 +39,15 @@
   width: 10.5rem;
   padding: 1em;
 }
-@media (width >= 64em) {
+@media (width >= 48em) {
   .logo img {
     height: 2.125rem;
+    width: auto;
+  }
+}
+@media (width >= 64em) {
+  .logo img {
+    height: 3rem;
     width: auto;
   }
 }
@@ -63,9 +69,9 @@
 .reservation_title {
   width: 17.188rem;
 }
-@media (width >= 64em) {
+@media (width >= 48em) {
   .reservation_title {
-    width: auto;
+    width: unset;
   }
 }
 .reservation_title > h2 {
@@ -75,7 +81,7 @@
   width: 19.688rem;
   margin-block-end: 1.688rem;
 }
-@media (width >= 64em) {
+@media (width >= 48em) {
   .reservation_p {
     width: auto;
   }
@@ -108,9 +114,20 @@
     padding-left: 10%;
   }
 }
+@media (64em >= width >= 48em) {
+  .restaurants_box {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .restaurants-title {
   margin-left: 1.25rem;
   margin-bottom: 1.25rem;
+}
+@media (width >= 64em) {
+  .restaurants-title {
+    margin-left: 9.7rem;
+  }
 }
 .restaurants-cards {
   display: flex;
@@ -122,10 +139,25 @@
   align-items: start;
   margin: unset;
   margin: 0 0 0 1.063rem;
+  gap: 1.125rem;
 }
-@media (64em <= width <= 90em) {
+@media (64em <= width) {
   .restaurants-cards {
     flex-direction: row;
+  }
+}
+@media (64em >= width >= 48em) {
+  .restaurants-cards {
+    display: flex;
+    /*    */
+    flex-direction: row;
+  }
+}
+@media (width >= 64em) {
+  .restaurants-cards {
+    gap: unset;
+    position: relative;
+    left: -2.5rem;
   }
 }
 .restaurants-cards > a {
@@ -161,6 +193,15 @@
     margin-bottom: 1.875rem;
   }
 }
+@media (64em >= width >= 48em) {
+  .restaurants_container_box {
+    display: flex;
+    /*    */
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 1.875rem;
+  }
+}
 .restaurants_heart {
   display: flex;
   flex-direction: row;
@@ -178,8 +219,9 @@
 }
 @media (width >= 64em) {
   .restaurants_heart {
-    left: -10rem;
-    bottom: -18rem;
+    left: -18rem;
+    top: 20%;
+    z-index: 1;
   }
 }
 .restaurants_card {
@@ -203,8 +245,10 @@
 }
 @media (width >= 64em) {
   .restaurants_card > img {
+    left: -10rem;
+    top: 18rem;
     width: 30.625rem;
-    height: 15.688rem;
+    object-fit: cover;
   }
 }
 .restaurants_card_1, .restaurants_card_3, .restaurants_card_4 {
@@ -218,6 +262,29 @@
 }
 .restaurants_card-subtitle {
   margin: 0.313rem 0 0.75rem 0.813rem;
+}
+
+.hart-resto {
+  left: 80%;
+  top: -4.5rem;
+}
+@media (width >= 64em) {
+  .hart-resto {
+    left: -10rem;
+    top: 13rem;
+  }
+}
+@media (64em >= width >= 48em) {
+  .hart-resto {
+    left: -5rem;
+    top: 13rem;
+  }
+}
+@media (width >= 90em) {
+  .hart-resto {
+    left: -5rem;
+    top: 13rem;
+  }
 }
 
 .localisation {
@@ -247,14 +314,10 @@
 
 body {
   margin: unset;
+  display: flex;
+  flex-direction: column;
 }
-@media (64em <= width) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 h2 {
   margin-block: unset;
 }
@@ -269,12 +332,14 @@ footer {
   align-items: start;
   margin: unset;
   background-color: #353535;
-  width: 100%;
+  min-width: 100%;
   height: 186px;
 }
 @media (width >= 64em) {
   footer {
     align-items: flex-end;
+    max-height: 7.125em;
+    min-width: 100%;
   }
 }
 
@@ -491,7 +556,7 @@ footer {
   align-items: center;
   gap: 1.558rem;
 }
-@media (width >= 64em) {
+@media (width >= 64rem) {
   .container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -505,7 +570,7 @@ footer {
   align-items: center;
   margin: unset;
 }
-.container_text {
+.container_content, .container_text {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -513,20 +578,27 @@ footer {
   margin: unset;
   position: relative;
   z-index: 0;
+  max-width: 90%;
 }
-.container_text:hover, .container_text:active {
-  box-shadow: 0rem 0.25rem 0.25rem 0.125rem rgba(153, 153, 153, 0.125);
-  -webkit-box-shadow: 0rem 0.25rem 0.25rem 0.125rem rgba(153, 153, 153, 0.125);
-  -moz-box-shadow: 0rem 0.25rem 0.25rem 0.125rem rgba(153, 153, 153, 0.125);
-  transform: scale(1);
+@media (width >= 26em) {
+  .container_content, .container_text {
+    max-width: 100%;
+  }
 }
-.container_text:hover ::before, .container_text:active ::before {
+.container_content:hover, .container_content:active, .container_text:hover, .container_text:active {
+  transform: scale(1.005);
+}
+.container_content:hover ::before, .container_content:active ::before, .container_text:hover ::before, .container_text:active ::before {
   color: rgb(147, 86, 220);
 }
-.container_text > i {
+.container_content > i, .container_text > i {
   margin-right: 0.625rem;
   color: #7e7e7e;
-  margin-right: 2rem;
+}
+@media (width >= 48rem) {
+  .container_content > i, .container_text > i {
+    margin-right: 2rem;
+  }
 }
 
 .solid {
@@ -563,23 +635,66 @@ footer {
   color: #008766;
   margin: unset;
   position: relative;
-  bottom: 15rem;
-  right: -14.7rem;
   z-index: 1;
   padding: 0.438rem 0.6rem 0.375rem 0.563rem;
 }
-@media (width >= 64em) {
+@media (64em >= width >= 48em) {
   .label {
-    right: 6.5rem;
-    top: 1.5rem;
+    right: -30rem;
+    top: 20rem;
   }
 }
 .label_box {
-  height: 1.125rem;
+  height: 0;
+}
+@media (width >= 48em) {
+  .label_box {
+    height: 1.125rem;
+  }
 }
 .label_hidden {
   margin: unset;
   visibility: hidden;
+}
+
+.LB_1 {
+  right: -14rem;
+  top: -34rem;
+}
+@media (width >= 64em) {
+  .LB_1 {
+    right: -20rem;
+    top: -17rem;
+  }
+}
+@media (width >= 47em) {
+  .LB_1 {
+    right: -54rem;
+    top: -18rem;
+  }
+}
+@media (width >= 48em) {
+  .LB_1 {
+    right: -68rem;
+    top: -17rem;
+  }
+}
+
+.LB_2 {
+  right: -14rem;
+  top: -17rem;
+}
+@media (width >= 48em) {
+  .LB_2 {
+    right: -21rem;
+    top: -18rem;
+  }
+}
+@media (width >= 64em) {
+  .LB_2 {
+    right: -30rem;
+    top: -17rem;
+  }
 }
 
 .footer {
@@ -588,6 +703,11 @@ footer {
   justify-content: center;
   align-items: center;
   margin: unset;
+}
+@media (width >= 48em) {
+  .footer {
+    justify-content: flex-end;
+  }
 }
 .footer_box {
   display: flex;
@@ -605,10 +725,10 @@ footer {
   color: white;
   text-decoration: none;
 }
-@media (width >= 64em) {
+@media (width >= 48em) {
   .footer_box {
     flex-direction: row-reverse;
-    gap: 3rem;
+    max-height: 3.375em;
   }
 }
 .footer_label {
@@ -638,7 +758,7 @@ footer {
   margin: unset;
   gap: 0.438rem;
 }
-@media (width >= 64em) {
+@media (width >= 48em) {
   .footer_container {
     flex-direction: row;
     gap: 1rem;
@@ -661,34 +781,35 @@ footer {
 }
 
 .partenaire {
-  padding-right: 2rem;
+  padding-right: 10rem;
+}
+@media (90rem >= width >= 48em) {
+  .partenaire {
+    padding-right: 0.5rem;
+  }
 }
 
 .entete {
   display: flex;
-}
-@media (64em <= width) {
-  .entete {
-    width: 100%;
-    object-fit: cover;
-  }
+  min-width: 100%;
+  max-height: 25rem;
+  width: 100%;
+  object-fit: cover;
 }
 .entete > img {
   max-width: 100%;
-  max-height: 25rem;
   object-fit: cover;
-}
-@media (64em <= width) {
-  .entete > img {
-    width: 100%;
-    object-fit: cover;
-  }
 }
 
 .menu {
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: #f6f6f6;
   padding-bottom: 2.5rem;
+}
+@media (48em <= width) {
+  .menu {
+    min-width: 73.19%;
+  }
 }
 .menu_section > h3 {
   margin-top: 2.5rem;
@@ -722,18 +843,29 @@ footer {
   top: -3.25rem;
   margin-bottom: -3.25rem;
 }
-@media (64em <= width) {
+@media (48em <= width) {
   .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% - 421px);
+    width: 60%;
+    left: 6rem;
+  }
+}
+@media (width >= 90em) {
+  .menu {
+    left: 12rem;
+  }
+}
+@media (width >= 64em) {
+  .menu {
+    left: 8rem;
   }
 }
 .menu_restaurant {
   padding: 2rem 0 0 1.063rem;
 }
-@media (64em <= width) {
+@media (48em <= width) {
   .menu_restaurant {
     display: flex;
     flex-direction: row;
@@ -753,7 +885,7 @@ footer {
   margin-right: 3rem;
   z-index: 1;
 }
-@media (64em <= width) {
+@media (48em <= width) {
   .menu_restaurant_heart {
     top: 0;
   }
@@ -807,6 +939,7 @@ footer {
   visibility: visible;
   min-width: 3.688rem;
   animation: delayCheck 0.5s ease-in-out;
+  overflow: hidden;
 }
 .menu_container_content {
   display: flex;
@@ -827,14 +960,25 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (width <= 23.5em) {
+  .menu_container_content > h4 {
+    font-size: 0.8rem;
+  }
+}
 .menu_container_content > p {
   font-size: 15.043px;
   margin-bottom: unset;
+  margin-top: unset;
   padding-right: 0.5rem;
   transition-duration: 0.5s;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+@media (width <= 23.5em) {
+  .menu_container_content > p {
+    font-size: 0.7rem;
+  }
 }
 .menu_container_content_price {
   display: flex;
@@ -878,9 +1022,10 @@ footer {
 .menu_section {
   margin: 0 0.813rem 0 0.813rem;
 }
-@media (64em <= width) {
+@media (48em <= width) {
   .menu_section {
-    min-width: 637px;
+    min-width: 70%;
+    overflow: hidden;
   }
 }
 
@@ -935,24 +1080,77 @@ footer {
 .header_arrow {
   margin: 1.4rem 0 0 1.063rem;
 }
-.header_arrow > i.fa-2x {
+.header_arrow > i {
+  position: relative;
+  font-size: 1.2em;
+  left: -2rem;
+}
+.header_arrow > i.fa-arrow-left .fa-2x {
   font-size: 1em;
 }
 .header_box {
   display: flex;
+  justify-content: center;
 }
-@media (width >= 64em) {
+@media (width >= 48em) {
   .header_arrow {
     visibility: visible;
     margin: 1.875rem 0 0 1.063rem;
     text-align: start;
+    max-height: 6rem;
   }
   .header_arrow > i {
+    position: relative;
+    left: -14rem;
+    top: -0.5rem;
     color: black;
   }
-  .header_box {
-    display: flex;
+}
+@media (width >= 23em) {
+  .header_arrow > i {
+    position: relative;
+    left: -2rem;
+    top: -0.5rem;
+    font-size: 1.7em;
   }
+}
+@media (width >= 26.5em) {
+  .header_arrow > i {
+    position: relative;
+    left: -5rem;
+    top: -0.5rem;
+    font-size: 1.7em;
+  }
+}
+@media (width >= 48em) {
+  .header_arrow > i {
+    position: relative;
+    left: -14rem;
+    top: -0.3rem;
+  }
+}
+@media (width >= 64em) {
+  .header_arrow > i {
+    position: relative;
+    left: -19rem;
+    top: 0.5rem;
+    font-size: 2em;
+  }
+}
+@media (width >= 90em) {
+  .header_arrow > i {
+    position: relative;
+    left: -34rem;
+  }
+}
+@media (width >= 160em) {
+  .header_arrow > i {
+    position: relative;
+    left: -62rem;
+  }
+}
+.header_box {
+  display: flex;
 }
 
 .menu_container_content_check {
@@ -976,7 +1174,7 @@ footer {
 }
 @keyframes delayCheck {
   0% {
-    transform: translateX(500px);
+    transform: translateX(50px);
   }
   100% {
     transform: translateX(0);

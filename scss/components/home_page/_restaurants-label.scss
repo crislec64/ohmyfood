@@ -4,22 +4,66 @@
     color: $color-label;
     margin: unset;
     position: relative;
-    bottom: 15rem;
-    right: -14.7rem;
+
     z-index: 1;
     padding: 0.438rem 0.6rem 0.375rem 0.563rem;
-    @media (width >= 64em) {
-        right: 6.5rem;
-        top: 1.5rem;
-      }
+
+
+
+    @media (64em >=width >=48em) {
+        right: -30rem;
+        top: 20rem;
+    }
+
+
 
     &_box {
-        height: 1.125rem;
+        height: 0;
+        @media (width >=48em) {
+            height: 1.125rem;
+        }
     }
 
     &_hidden {
         margin: unset;
         visibility: hidden;
 
+    }
+}
+
+.LB_1 {
+    right: -14rem;
+    top: -34rem;
+
+    @media (width >=64em) {
+        right: -20rem;
+        top: -17rem;
+    }
+
+
+    @media (width >=47em) {
+        right: -54rem;
+        top: -18rem;
+    }
+    @media (width >=48em) {
+        right: -68rem;
+        top: -17rem;
+    }
+}
+
+.LB_2 {
+    right: -14rem;
+    top: -17rem;
+
+
+    @media (width >=48em) {
+        right: -21rem;
+        top: -18rem;
+    }
+    
+
+    @media (width >=64em) {
+        right: -30rem;
+        top: -17rem;
     }
 }

@@ -3,7 +3,7 @@
     align-items: center;
     gap: 1.558rem;
 
-    @media (width >=64em) {
+    @media (width >=64rem) {
         flex-direction: row;
         justify-content: space-evenly;
         gap: unset;
@@ -13,15 +13,21 @@
         @include box;
     }
 
-    &_text {
+    &_content ,
+    &_text
+    {
         @include box;
         position: relative;
         z-index: 0;
+        max-width: 90%;
+        @media (width >=26em) {
+            max-width: 100%;
+        }
 
         &:hover,
         &:active {
-            @include shadow-fonctionnement;
-            transform: scale(1);
+            
+            transform: scale(1.005);
 
             ::before {
                 color: $color-primary;
@@ -31,7 +37,10 @@
         &>i {
             margin-right: 0.625rem;
             color: $icon;
-            margin-right: 2rem;
+           
+            @media (width >=48rem) {
+                margin-right: 2rem;
+            }
 
             
         }
