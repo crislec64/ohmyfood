@@ -1,17 +1,24 @@
-body{
+body {
     margin: unset;
+    display: flex;
+    flex-direction: column;
 }
-h2{
-    margin-block:unset;
+
+h2 {
+    margin-block: unset;
 }
-footer{
-    @include box_fonct; 
+
+footer {
+    @include box_fonct;
     background-color: $background-footer;
-    width: 100%;
+    min-width: 100%;
     height: 186px;
-    @media (width >= 64em) {
+
+    @media (width >=64em) {
         align-items: flex-end;
-      }
-    
-    
+        max-height: 7.125em;
+        min-width: 100%;
+    }
+
+
 }

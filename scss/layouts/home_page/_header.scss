@@ -12,8 +12,12 @@
         width: 10.5rem;
         padding: 1em;
 
-        @media (width >=64em) {
+        @media (width >=48em) {
             height: 2.125rem;
+            width: auto;
+        }
+        @media (width >=64em) {
+            height: 3rem;
             width: auto;
         }
     }

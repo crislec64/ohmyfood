@@ -1,11 +1,16 @@
 .entete {
     display: flex;
+    min-width: 100%;
+    max-height: 25rem;
+    width: 100%;
+    object-fit: cover;
+
 
     &>img {
         max-width: 100%;
-        max-height: 25rem;
-        width: 100%;
         object-fit: cover;
+
+
 
     }
 }
@@ -14,8 +19,10 @@
     border-radius: 2.5rem 2.5rem 0 0;
     background-color: $background-reservation;
     padding-bottom: 2.5rem;
-    
-    
+
+    @media (48em <=width) {
+        min-width: 73.19%;
+    }
 
     &_section {
 
@@ -30,16 +37,22 @@
         flex-direction: column;
         gap: 0.75rem;
     }
-    &_box_logo{
+
+    &_box_logo {
         @media (width >=64em) {
-        margin-left: 33%;
-        border: transparent;
+            margin-left: 33%;
+            border: transparent;
+        }
+
+        @media (64em <=width) {
+            margin-left: unset;
         }
     }
-    
-    
+
+
 }
-.commander{
+
+.commander {
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;

@@ -4,10 +4,35 @@
     top: -3.25rem;
     margin-bottom: -3.25rem;
 
+    @media (48em <=width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 40%);
+        left: 6rem;
+
+    }
+
+    @media (width >=90em) {
+        left: 12rem;
+
+    }
+
+    @media (width >=64em) {
+        left: 8rem;
+
+    }
+
     &_restaurant {
 
         padding: 2rem 0 0 1.063rem;
 
+        @media (48em <=width) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 24px;
+        }
 
         &_heart {
             @include box;
@@ -16,6 +41,12 @@
             top: -1rem;
             margin-right: 3rem;
             z-index: 1;
+
+            @media (48em <=width) {
+                top: 0;
+
+            }
+
         }
 
     }
@@ -28,7 +59,7 @@
         &_box {
             @include box;
             justify-content: space-between;
-            
+
 
             // bouton vert colle bordure : padding 
             padding: 0 0 0 0.938rem;
@@ -41,12 +72,12 @@
 
 
                 .menu_container_content {
-                   // @include box_fonct;
+                    // @include box_fonct;
                     display: block;
                     overflow: hidden;
                     min-width: calc(95% - 5.376rem);
                     transition: min-width .5s ease-in-out;
-                    
+
                 }
 
                 .menu_container_content_price {
@@ -64,7 +95,8 @@
                     align-items: center;
                     visibility: visible;
                     min-width: 3.688rem;
-                    animation: delayCheck .5s ease-in-out
+                    animation: delayCheck .5s ease-in-out;
+                    overflow: hidden;
                 }
             }
         }
@@ -73,7 +105,8 @@
             @include box_fonct;
             height: 100%;
             min-width: calc(100% - 2.626em);
-           
+            
+
 
 
 
@@ -84,18 +117,25 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                
+
+                @media ( width<= 23.5em){
+                    font-size: .8rem;
+                }
             }
 
             &>p {
                 font-size: 15.043px;
                 margin-bottom: unset;
-               padding-right: 0.5rem;
+                margin-top: unset;
+                padding-right: 0.5rem;
                 transition-duration: .5s;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
-                
+                @media ( width<= 23.5em){
+                    font-size: .7rem;
+                }
+
 
             }
 
@@ -149,7 +189,10 @@
     &_section {
         margin: 0 0.813rem 0 0.813rem;
 
-
+        @media (48em <=width) {
+            min-width: 70%;
+            overflow: hidden;
+        }
     }
 }
 
@@ -175,7 +218,8 @@
 
         animation-delay: 550ms;
     }
-    &_40{
+
+    &_40 {
         animation-delay: 650ms;
     }
 

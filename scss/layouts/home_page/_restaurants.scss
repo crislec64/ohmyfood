@@ -6,25 +6,43 @@
     &_box {
         @include box_fonct;
 
-        @media (64em <= width) {
+        @media (64em <=width) {
             padding-left: 10%;
         }
+        @media (64em >=width >=48em) {
+            display: flex;
+            flex-direction: column;
     }
-
+    }
     &-title {
 
         margin-left: 1.25rem;
         margin-bottom: 1.25rem;
+        @media (width >=64em) {
+            margin-left: 9.7rem;
+        }
     }
 
     &-cards {
         @include box_fonct;
         margin: 0 0 0 1.063rem;
+        gap: 1.125rem;
 
-        @media (64em <= width <=90em) {
+        @media (64em<=width) {
             flex-direction: row;
         }
 
+        @media (64em >=width >=48em) {
+            display: flex;
+            /*    */
+            flex-direction: row;
+        }
+        @media (width >=64em) {
+            gap: unset;
+            position: relative;
+            left: -2.5rem;
+        
+        }
         &>a {
             @include box_fonct;
             text-decoration: none;
@@ -38,11 +56,19 @@
         width: 100%;
 
         &_box {
-            @media (64em <= width ) {
+            @media (64em <=width) {
                 display: flex;
                 flex-direction: column;
                 gap: 50px;
                 flex-wrap: wrap;
+                margin-bottom: 1.875rem;
+            }
+
+            @media (64em >=width >=48em) {
+                display: flex;
+                /*    */
+                flex-direction: column;
+                gap: 3rem;
                 margin-bottom: 1.875rem;
             }
         }
@@ -56,10 +82,14 @@
         bottom: 3.75rem;
         left: 18.75rem;
         z-index: 1;
-        @media (width >= 64em) {
-            left: -10rem;
-            bottom: -18rem;
-          }
+
+        @media (width >=64em) {
+            left: -18rem;
+            top: 20%;
+            z-index: 1;
+
+        }
+
     }
 
     &_card {
@@ -68,16 +98,26 @@
         background-color: $white;
         border-radius: 0.938rem;
 
+
+
+
+
         &>img {
             width: 21.25rem;
             height: 10.875rem;
             border-radius: 0.938rem 0.938rem 0 0;
             object-fit: cover;
+
             @media (width >=64em) {
+                left: -10rem;
+                top: 18rem;
                 width: 30.625rem;
-                height: 15.688rem;
+
+                object-fit: cover;
+                
             }
-            
+
+
         }
 
         &_1,
@@ -97,5 +137,25 @@
         &-subtitle {
             margin: 0.313rem 0 0.75rem 0.813rem;
         }
+    }
+}
+
+.hart-resto {
+    left: 80%;
+    top: -4.5rem;
+
+    @media (width >=64em) {
+        left: -10rem;
+        top: 13rem;
+    }
+
+    @media (64em >=width >=48em) {
+        left: -5rem;
+        top: 13rem;
+
+    }
+    @media (width >=90em) {
+        left: -5rem;
+        top: 13rem;
     }
 }

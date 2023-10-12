@@ -1,6 +1,9 @@
 .footer {
     @include box;
-    
+    @media (width >= 48em) {
+        justify-content: flex-end;
+       
+      }
 
     &_box {
         @include box_fonct;
@@ -10,9 +13,9 @@
             color:$white;
             text-decoration: none;
         }
-        @media (width >= 64em) {
-            flex-direction: row-reverse;
-            gap: 3rem;
+        @media (width >= 48em) {
+            flex-direction: row-reverse;        
+            max-height: 3.375em;
           }
     }
 
@@ -36,10 +39,11 @@
     &_container {
         @include box-fonct;
         gap: 0.438rem;
-        @media (width >= 64em) {
+        @media (width >= 48em) {
             flex-direction: row;
             gap:1rem;
           }
+          
     }
 
     &_logo {
@@ -68,5 +72,8 @@
     }
 }
 .partenaire{
-    padding-right: 2rem;
+    padding-right: 10rem;
+    @media( 90rem >= width >= 48em) {
+        padding-right: .5rem;
+}
 }
