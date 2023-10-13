@@ -18,19 +18,29 @@
 
  .loading-container {
      width: 100%;
-     //max-width: 520px;
+     max-width: 80%;
      width: 100%;
-     max-width: 520px;
      text-align: center;
      color: #fff;
      position: relative;
      margin: 0 32px;
+     margin-left: 0rem;
 
+     @media (width <=23.438em) {
+        margin-left: 2rem;
+    }
      top: 50%;
-     left: 25%;
+     @media (64em >=width >=48em) {
+        margin-left: 6rem
+        ;
+    }
+    @media (width >=64em) {
+        margin-left: 9.7rem;
+    }
 
 
      &:before {
+    
          content: '';
          position: absolute;
          margin-top: 80px;
