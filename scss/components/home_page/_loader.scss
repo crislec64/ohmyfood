@@ -2,7 +2,7 @@
 
 
 .loading-box {
-    z-index: 1000;
+    z-index: 10000;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -10,8 +10,6 @@
     font-family: 'shrikhand';
     overflow: hidden;
     animation: loader 3s ease-out;
-   
-    animation-delay: 1s;
     animation-fill-mode: both;
 }
 
@@ -67,7 +65,7 @@
         opacity: 0;
         width: 0;
         background-size: 120% 100%;
-
+        z-index: -1000;
 
     }
 }
@@ -180,6 +178,7 @@
     0% {
         transform: rotate(-180deg) scale(0);
         opacity: 0;
+       
     }
 
     33.3%,
@@ -191,6 +190,8 @@
     100% {
         transform: scale(1);
         opacity: 0;
+        z-index: -1000;
+        
     }
 }
 
@@ -199,6 +200,7 @@
         transform: translateX(150vw) translateY(0vw) rotate(360deg);
         opacity: 0;
     }
+
 
     33.3%,
     66% {
@@ -210,6 +212,7 @@
     100% {
         transform: translateX(-25vw)translateY(40vw) rotate(-360deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -229,6 +232,7 @@
     100% {
         transform: translateX(15vw)translateY(40vw) rotate(180deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -248,6 +252,7 @@
     100% {
         transform: translateX(15vw)translateY(40vw) rotate(360deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -267,6 +272,7 @@
     100% {
         transform: translateX(85vw)translateY(40vw) rotate(155deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -286,6 +292,7 @@
     100% {
         transform: translateX(15vw)translateY(40vw) rotate(-360deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -305,6 +312,7 @@
     100% {
         transform: translateX(15vw)translateY(40vw) rotate(300deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -324,6 +332,7 @@
     100% {
         transform: translateX(15vw)translateY(40vw) rotate(300deg);
         opacity: 0;
+        z-index: -1000;
     }
 }
 
@@ -375,6 +384,7 @@
 
     100% {
         transform: rotateY(3600deg);
+        z-index: -1000;
     }
 }
 @keyframes loader {
@@ -392,6 +402,7 @@
     }
     100% {
         opacity:0;
+        z-index: -1000;
         
     }
 } 

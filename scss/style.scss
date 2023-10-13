@@ -1,27 +1,33 @@
 
 @import "utils/variables";
 @import "utils/mixin";
+@import "utils/keyframes";
+
 @import "layouts/home_page/fonctionnement";
 @import "layouts/home_page/header";
 @import "layouts/home_page/reservation";
 @import "layouts/home_page/restaurants";
 @import "layouts/home_page/footer";
 @import "layouts/home_page/location";
+
 @import "base/index";
 @import "base/font";
+
 @import "components/home_page/btn";
 @import "components/home_page/fonctionnement-number";
 @import "components/home_page/fonctionnement-container";
 @import "components/home_page/restaurants-heart";
 @import "components/home_page/restaurants-label";
 @import "components/home_page/footer";
+@import "components/home_page/loader";
+
 
 @import "layouts/page_restaurant/Le_delice_des_sens.scss";
 @import "components/page_restaurant/menu-container";
 @import "components/page_restaurant/header_arrow";
 @import "components/page_restaurant/checkList";
-@import "components/home_page/loader";
-@import "utils/keyframes";
+
+
 
 
 

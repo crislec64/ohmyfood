@@ -34,19 +34,12 @@
 .LB_1 {
     right: -14rem;
     top: -34rem;
-
-    @media (width >=64em) {
-        right: -20rem;
-        top: -17rem;
-    }
-
-
-    @media (width >=47em) {
-        right: -54rem;
+    @media (width >=48em) {
+       right: -49rem;
         top: -18rem;
     }
-    @media (width >=48em) {
-       // right: -68rem;
+    @media (width >=64em) {
+        right: -35rem;
         top: -17rem;
     }
 }
@@ -57,13 +50,13 @@
 
 
     @media (width >=48em) {
-        right: -21rem;
+        right: -20rem;
         top: -18rem;
     }
     
 
     @media (width >=64em) {
-        right: -30rem;
+        right: -62rem;
         top: -17rem;
     }
 }

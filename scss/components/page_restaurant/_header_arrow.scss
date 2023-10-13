@@ -1,19 +1,21 @@
 .header {
     &_arrow {
         margin: 1.4rem 0 0 1.063rem;
-        &>i{
+        :active{
+            color:$white;
+        }
+
+        &>i {
             position: relative;
             font-size: 1.2em;
             left: -2rem;
         }
 
         &>i.fa-arrow-left .fa-2x {
-           
+
             font-size: 1em;
-           
+
         }
-
-
     }
 
     &_box {
@@ -28,17 +30,10 @@
             text-align: start;
             max-height: 6rem;
 
-            &>i {
-                position: relative;
-                left: -14rem;
-                top: -.5rem;
-                color: $black;
-                
-               
-            }
         }
     }
-    @media (width >=23em) {
+
+    @media (width <=23.438em) {
 
         &_arrow>i {
             position: relative;
@@ -47,22 +42,34 @@
             font-size: 1.7em;
         }
     }
+
     @media (width >=26.5em) {
 
         &_arrow>i {
             position: relative;
-            left: -5rem;
+            left: -4rem;
             top: -.5rem;
             font-size: 1.7em;
         }
     }
+
     @media (width >=48em) {
-        &_arrow>i {
-            position: relative;
-            left: -14rem;
-            top: -.3rem;
+        &_arrow {
+            visibility: visible;
+            margin: 1.875rem 0 0 1.063rem;
+            text-align: start;
+            max-height: 6rem;
+
+
+
+            &>i {
+                position: relative;
+                left: -14rem;
+                top: -.3rem;
+            }
         }
     }
+
     @media (width >=64em) {
         &_arrow>i {
             position: relative;
@@ -75,8 +82,8 @@
     @media (width >=90em) {
         &_arrow>i {
             position: relative;
-            left: -34rem;
-            
+            left: -3rem;
+
         }
     }
 

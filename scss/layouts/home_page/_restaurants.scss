@@ -36,6 +36,7 @@
             display: flex;
             /*    */
             flex-direction: row;
+            gap: unset;
         }
         @media (width >=64em) {
             gap: unset;
@@ -79,17 +80,7 @@
         @include box_fonct;
         margin: unset;
         position: relative;
-        bottom: 3.75rem;
-        left: 18.75rem;
         z-index: 1;
-
-        @media (width >=64em) {
-            left: -18rem;
-            top: 20%;
-            z-index: 1;
-
-        }
-
     }
 
     &_card {
@@ -150,12 +141,12 @@
     }
 
     @media (64em >=width >=48em) {
-        left: -5rem;
+        left: -5%;
         top: 13rem;
 
     }
     @media (width >=90em) {
-        left: -5rem;
+        left: -30rem;
         top: 13rem;
     }
 }
