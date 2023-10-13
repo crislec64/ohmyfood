@@ -64,7 +64,7 @@
             // bouton vert colle bordure : padding 
             padding: 0 0 0 0.938rem;
             border-radius: 0.938rem;
-            animation: delay 750ms cubic-bezier(0.25, 0.45, 0.55, 0.95) both;
+            animation: delay 250ms cubic-bezier(0.25, 0.45, 0.55, 0.95) both;
 
 
             &:hover {
@@ -102,10 +102,10 @@
         }
 
         &_content {
-            @include box_fonct;
+            //@include box_fonct;
             height: 100%;
             min-width: calc(100% - 2.626em);
-            
+            overflow: hidden;
 
 
 
@@ -117,6 +117,8 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                position: relative;
+                top: 23%;
 
                 @media ( width<= 23.5em){
                     font-size: .8rem;
@@ -132,6 +134,8 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                position: relative;
+                top: 30%;
                 @media ( width<= 23.5em){
                     font-size: .7rem;
                 }
@@ -155,6 +159,7 @@
                 border-radius: 0 0.938rem 0.938rem 0;
                 z-index: 0;
                 align-items: center;
+                overflow: hidden;
 
                 &>.fa-circle-check {
 
@@ -164,6 +169,7 @@
                     text-align: center;
                     border-radius: 100%;
                     font-weight: bolder;
+                    
 
                 }
 
