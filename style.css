@@ -48,6 +48,16 @@
   margin-bottom: 1.625rem;
   width: 100%;
 }
+@media (64em >= width >= 48em) {
+  .fonctionnement-title {
+    margin-left: -12.2rem;
+  }
+}
+@media (23.438em >= width) {
+  .fonctionnement-title {
+    margin-left: 2rem;
+  }
+}
 
 /* logo */
 .logo {
@@ -152,6 +162,11 @@
   margin-left: 1.25rem;
   margin-bottom: 1.25rem;
 }
+@media (64em >= width >= 48em) {
+  .restaurants-title {
+    margin-left: 12.2rem;
+  }
+}
 @media (width >= 64em) {
   .restaurants-title {
     margin-left: 9.7rem;
@@ -172,6 +187,9 @@
 @media (64em <= width) {
   .restaurants-cards {
     flex-direction: row;
+    gap: unset;
+    position: relative;
+    left: -2.5rem;
   }
 }
 @media (64em >= width >= 48em) {
@@ -180,13 +198,6 @@
     /*    */
     flex-direction: row;
     gap: unset;
-  }
-}
-@media (width >= 64em) {
-  .restaurants-cards {
-    gap: unset;
-    position: relative;
-    left: -2.5rem;
   }
 }
 .restaurants-cards > a {
@@ -288,11 +299,8 @@
   left: 80%;
   top: -4.5rem;
 }
-@media (width >= 64em) {
-  .hart-resto {
-    left: -10rem;
-    top: 13rem;
-  }
+.hart-resto > .solid {
+  margin-top: -0.0001rem;
 }
 @media (64em >= width >= 48em) {
   .hart-resto {
@@ -300,9 +308,15 @@
     top: 13rem;
   }
 }
+@media (width >= 64em) {
+  .hart-resto {
+    left: -3rem;
+    top: 13rem;
+  }
+}
 @media (width >= 90em) {
   .hart-resto {
-    left: -30rem;
+    left: 30rem;
     top: 13rem;
   }
 }
@@ -511,6 +525,7 @@ footer {
   background-image: #f6f6f6;
   height: 4.5rem;
   margin-left: 0.75rem;
+  color: black;
 }
 @media (64em <= width <= 90em) {
   .fonctionnement_btn {
@@ -562,7 +577,17 @@ footer {
   z-index: 1;
   height: 1.5rem;
   width: 1.5rem;
-  left: 1rem;
+  left: 0.6rem;
+}
+@media (64em >= width >= 48em) {
+  .number {
+    left: 1rem;
+  }
+}
+@media (width <= 23.438em) {
+  .number {
+    left: 2rem;
+  }
 }
 
 .container {
@@ -601,7 +626,7 @@ footer {
   z-index: 0;
   max-width: 90%;
 }
-@media (width >= 26em) {
+@media (width >= 23.438em) {
   .container_content, .container_text {
     max-width: 100%;
   }
@@ -642,6 +667,10 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.regular {
+  margin-right: -1.25rem;
 }
 
 .label {
@@ -806,18 +835,20 @@ footer {
 }
 
 .loading-box {
+  width: 100%;
+  height: 100vh;
+  display: block;
   z-index: 10000;
   position: fixed;
-  height: 100%;
-  width: 100%;
   background-color: #353535;
   font-family: "shrikhand";
   overflow: hidden;
-  animation: loader 3s ease-out;
+  animation: loader 3s ease-in-out;
   animation-fill-mode: both;
 }
 
 .loading-container {
+  width: 100%;
   width: 100%;
   max-width: 520px;
   text-align: center;
@@ -825,14 +856,14 @@ footer {
   position: relative;
   margin: 0 32px;
   top: 50%;
-  left: 15%;
+  left: 25%;
 }
 .loading-container:before {
   content: "";
   position: absolute;
   margin-top: 80px;
   width: 100%;
-  height: 5px;
+  height: 20.2px;
   background: linear-gradient(to top, rgb(147, 86, 220) -11.44%, #ff79da 123.93%) left/0% 100% no-repeat;
   border-radius: 50px;
   animation: movingLine 3s infinite ease-in-out;
@@ -1096,15 +1127,6 @@ footer {
     z-index: -1000;
   }
 }
-/* HTML: <div class="loader"></div> */
-.loader {
-  width: 50px;
-  aspect-ratio: 1;
-  display: grid;
-  -webkit-mask: conic-gradient(from 15deg, rgba(0, 0, 0, 0), #000);
-  animation: l26 1s infinite steps(12);
-}
-
 .loader_ball {
   display: inline-block;
   transform: translateZ(1px);
@@ -1144,7 +1166,7 @@ footer {
     opacity: 1;
   }
   25% {
-    opacity: 0.75;
+    opacity: 1;
   }
   50% {
     opacity: 0.5;

@@ -18,9 +18,13 @@
 
         margin-left: 1.25rem;
         margin-bottom: 1.25rem;
+        @media (64em >=width >=48em) {
+            margin-left: 12.2rem;
+        }
         @media (width >=64em) {
             margin-left: 9.7rem;
         }
+
     }
 
     &-cards {
@@ -30,6 +34,9 @@
 
         @media (64em<=width) {
             flex-direction: row;
+            gap: unset;
+            position: relative;
+            left: -2.5rem;
         }
 
         @media (64em >=width >=48em) {
@@ -38,12 +45,7 @@
             flex-direction: row;
             gap: unset;
         }
-        @media (width >=64em) {
-            gap: unset;
-            position: relative;
-            left: -2.5rem;
         
-        }
         &>a {
             @include box_fonct;
             text-decoration: none;
@@ -81,6 +83,7 @@
         margin: unset;
         position: relative;
         z-index: 1;
+        
     }
 
     &_card {
@@ -134,19 +137,20 @@
 .hart-resto {
     left: 80%;
     top: -4.5rem;
-
-    @media (width >=64em) {
-        left: -10rem;
-        top: 13rem;
+    &>.solid{
+        margin-top: -.0001rem;;
     }
-
     @media (64em >=width >=48em) {
         left: -5%;
         top: 13rem;
 
     }
+    @media (width >=64em) {
+        left: -3rem;
+        top: 13rem;
+    }
     @media (width >=90em) {
-        left: -30rem;
+        left: 30rem;
         top: 13rem;
     }
 }
