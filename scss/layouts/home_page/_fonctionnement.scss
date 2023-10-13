@@ -6,6 +6,13 @@
         margin-left: 1.25rem;
         margin-bottom: 1.625rem;
         width: 100%;
+
+        @media (64em >=width >=48em) {
+            margin-left: -12.2rem;
+        }
+        @media (23.438em >=width) {
+            margin-left: 2rem;
+        }
     }
 }
 
