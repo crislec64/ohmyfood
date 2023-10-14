@@ -1,24 +1,37 @@
 /* logo */
 .logo {
-    height: 3.938rem;
-    @include box;
+    display: flex;
+    align-items: end;
+    position: relative;
+    left: -100px;
+    
 
-    @media (width >=64em) {
-        height: 6rem;
+    @media (width >=48em) {
+        left: calc((100%/2)/-2);
+        height: 3rem;
+    }
+
+    @media (width <=48em) {
+
+        height: 3rem;
     }
     
 
-    img {
-        width: 10.5rem;
-        padding: 1em;
+
+    &>img {
+
+        height: 2.25rem;
+        width: auto;
+        padding: 0 1.188rem 0 1rem;
+
 
         @media (width >=48em) {
-            height: 2.125rem;
+            height: 2.25rem;
             width: auto;
+            padding: 0 1.188rem 0 1rem;
         }
-        @media (width >=64em) {
-            height: 3rem;
-            width: auto;
+        @media (width >=90em) {
+            height: 2.125rem;
         }
     }
 }
