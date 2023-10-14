@@ -9,7 +9,7 @@
     overflow: hidden;
     animation: loader 4s ease-out forwards;
 
-    @keyframes loading {
+    @keyframes loader {
         from {
             visibility: visible;
         }
@@ -20,8 +20,7 @@
     }
 
     .loading-container {
-
-
+        max-width: 73%;
         width: 100%;
         text-align: center;
         color: #fff;
@@ -49,7 +48,7 @@
             content: '';
             position: absolute;
             margin-top: 80px;
-            width: 100%;
+            width: 80%;
             height: 20.2px;
             background: $linear-gradient left/0% 100% no-repeat;
             border-radius: 50px;
