@@ -14,6 +14,12 @@
         right: -30rem;
         top: 20rem;
     }
+    @media (width <=23.438em) {
+        height: 2rem;
+        padding: 0 .5rem;
+        font-size: 1em;
+
+    }
 
 
 
@@ -34,6 +40,10 @@
 .LB_1 {
     right: -14rem;
     top: -34rem;
+    @media (width <=23.438em) {
+        right: -12rem;
+        top: -28rem;
+    }
     @media (width >=48em) {
        right: -49rem;
         top: -18rem;
@@ -48,6 +58,10 @@
     right: -14rem;
     top: -17rem;
 
+    @media (width <=23.438em) {
+        right: -12rem;
+        top: -14rem;
+    }
 
     @media (width >=48em) {
         right: -20rem;

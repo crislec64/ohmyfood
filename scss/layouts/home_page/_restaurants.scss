@@ -97,6 +97,7 @@
 
 
         &>img {
+           
             width: 21.25rem;
             height: 10.875rem;
             border-radius: 0.938rem 0.938rem 0 0;
@@ -106,7 +107,14 @@
                 left: -10rem;
                 top: 18rem;
                 width: 30.625rem;
-
+                object-fit: cover;
+                
+            }
+            @media (width <=23.438em) {
+                left: 0rem;
+                //top: 18rem;
+                width: 18rem;
+                height: 8rem;
                 object-fit: cover;
                 
             }
@@ -136,9 +144,13 @@
 
 .hart-resto {
     left: 80%;
-    top: -4.5rem;
+    top: -3.5rem;
     &>.solid{
         margin-top: -.0001rem;;
+    }
+    @media (width <=23.438em) {
+        top: -3rem;
+
     }
     @media (64em >=width >=48em) {
         left: -5%;

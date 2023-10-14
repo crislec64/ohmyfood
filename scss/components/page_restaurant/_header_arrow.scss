@@ -1,13 +1,19 @@
 .header {
     &_arrow {
+        @media (width <=23.438em) {
+            position: relative;
+            top: .5rem;
+        }
        
         :active{
             color:$white;
         }
 
-        &>i.fa-arrow-left .fa-2x {
-            font-size: 1em;
-
+        &>.fa-2x {
+            @media (width <=23.438em) {
+                font-size: 1.4em;
+            }
+            
         }
     }
 
