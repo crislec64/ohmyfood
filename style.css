@@ -363,7 +363,7 @@
 }
 @media (width >= 90em) {
   .hart-resto {
-    left: 30rem;
+    left: -3rem;
     top: 13rem;
   }
 }
