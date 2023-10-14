@@ -1382,7 +1382,7 @@ footer {
   justify-content: space-between;
   padding: 0 0 0 0.938rem;
   border-radius: 0.938rem;
-  animation: delay 250ms cubic-bezier(0.25, 0.45, 0.55, 0.95) both;
+  animation: delay 250ms cubic-bezier(0.25, 0.45, 0.55, 0.95)both;
 }
 .menu_container_box:hover .menu_container_content {
   display: block;
