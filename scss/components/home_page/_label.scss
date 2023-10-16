@@ -1,30 +1,27 @@
+/* *************   label page resto ********** */
 .label {
     @include box_fonct;
     background-color: $background-label;
     color: $color-label;
     margin: unset;
-    position: relative;
-
-    z-index: 1;
     padding: 0.438rem 0.6rem 0.375rem 0.563rem;
-
-
+    position: relative;
+    z-index: 1;
 
     @media (64em >=width >=48em) {
         right: -30rem;
         top: 20rem;
     }
+    
     @media (width <=23.438em) {
-        height: 2rem;
+        height: 1.5rem;
         padding: 0 .5rem;
-        font-size: 1em;
-
     }
-
-
+    
 
     &_box {
         height: 0;
+        
         @media (width >=48em) {
             height: 1.125rem;
         }
@@ -36,7 +33,7 @@
 
     }
 }
-
+/* *************   label page d'accueil ********** */
 .LB_1 {
     right: -14rem;
     top: -34rem;
@@ -45,12 +42,13 @@
         top: -28rem;
     }
     @media (width >=48em) {
-       right: -49rem;
-        top: -18rem;
+       right: -42rem;
+        top: -15rem;
+        
     }
     @media (width >=64em) {
-        right: -35rem;
-        top: -17rem;
+        right: -28rem;
+        top: -15rem;
     }
 }
 
@@ -61,16 +59,18 @@
     @media (width <=23.438em) {
         right: -12rem;
         top: -14rem;
+        
     }
 
     @media (width >=48em) {
-        right: -20rem;
-        top: -18rem;
+        right: -17rem;
+        top: -15rem;
+        height: 1rem;
     }
     
 
     @media (width >=64em) {
-        right: -62rem;
-        top: -17rem;
+        right: -50rem;
+        top: -15rem;
     }
 }

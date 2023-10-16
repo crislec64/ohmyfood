@@ -1,21 +1,4 @@
 .header {
-    &_arrow {
-        @media (width <=23.438em) {
-            position: relative;
-            top: .5rem;
-        }
-
-        :active {
-            color: $white;
-        }
-
-        &>.fa-2x {
-            @media (width <=23.438em) {
-                font-size: 1.4em;
-            }
-        }
-    }
-
     &_box {
         align-items: center;
         display: flex;

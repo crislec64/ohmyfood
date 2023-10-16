@@ -1,0 +1,12 @@
+.logo-resto{
+    width: 12rem;
+    @media (width <=23.438em) {
+        width: 11rem;
+        margin-left: 2rem;
+    }
+    @media (width >=48em) {
+        width: 12.5rem;  
+    }
+    
+
+}

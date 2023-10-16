@@ -1,0 +1,95 @@
+.menu {
+    background-color: $background-reservation;
+    border-radius: 2.5rem 2.5rem 0 0;
+    margin-bottom: -3.25rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    top: -3.25rem;
+    z-index: 1;
+
+    @media (48em <=width) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        left: 6rem;
+        min-width: 73.19%;
+        width: calc(100% - 40%);
+    }
+
+    @media (width >=64em) {
+        left: 8rem;
+    }
+
+    @media (width >=90em) {
+        left: 12rem;
+    }
+
+
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    &_restaurant {
+        padding: 2rem 0 0 1.063rem;
+
+        @media (48em <=width) {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            justify-content: center;
+        }
+
+        &_heart {
+            @include box;
+            justify-content: flex-end;
+            margin-right: 3rem;
+            position: relative;
+            top: -1rem;
+            z-index: 1;
+
+            @media (48em <=width) {
+                top: 0;
+            }
+        }
+    }
+
+    &_section {
+        margin: 0 0.813rem 0 0.813rem;
+
+        @media (48em <=width) {
+            min-width: 70%;
+            overflow: hidden;
+        }
+
+        &>h3 {
+            margin-top: 2.5rem;
+        }
+
+    }
+
+    &_title {
+        animation: delay 750ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        position: relative;
+        transform: scale(0);
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            background-color: $background-line;
+            display: block;
+            height: 0.188rem;
+            position: absolute;
+            top: 1.5rem;
+            width: 2.5rem;
+        }
+    }
+}
+
+.commander {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
