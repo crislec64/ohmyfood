@@ -24,6 +24,7 @@
                     }
 
                     &_check{
+                        display: block;
                         visibility: visible;
                         animation: delayCheck .5s ease-in-out;
                         overflow: hidden;

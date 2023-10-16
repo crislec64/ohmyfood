@@ -17,9 +17,10 @@ h3 {
 .fonctionnement-container_number {
   font-size: 0.886rem;
 }
+
 .fonctionnement_btn {
   @media (64rem>=width >=48em) {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -41,7 +42,7 @@ footer {
   line-height: normal;
 }
 
-.label{
+.label {
   font-size: 1em;
 }
 
@@ -97,7 +98,7 @@ footer {
       &>p {
         font-size: 0.94rem;
         font-weight: 300;
-        
+
       }
 
       &_price {
@@ -106,9 +107,10 @@ footer {
           font-weight: 700;
           color: $background-footer;
 
-          @media ( width<= 23.438em){
+          @media (width<=23.438em) {
             font-size: .7rem;
-        }
+            
+          }
         }
       }
     }
@@ -122,9 +124,9 @@ p {
   color: $icon;
   font-style: normal;
 
-  @media ( width<= 23.438em){
+  @media (width<=23.438em) {
     font-size: 1rem;
-}
+  }
 
 }
 

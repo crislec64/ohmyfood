@@ -3,7 +3,6 @@
 /*  **************  label  ************/
 /*  **************    shadow    ***************/
 /* *************** Border-radius *************/
-/* *************** Border-color *************/
 @keyframes delay {
   0% {
     transform: translateX(500px) skewX(50deg) scale(0);
@@ -920,7 +919,7 @@ p {
   -moz-box-shadow: 0rem 0.25rem 0.25rem 0.125rem rgba(0, 0, 0, 0.125);
   border: transparent;
   cursor: pointer;
-  background-image: #f6f6f6;
+  background-color: #f6f6f6;
   border-radius: 1.25rem;
   color: black;
   display: flex;
@@ -1448,6 +1447,7 @@ p {
   animation: delayCheck 0.5s ease-in-out;
 }
 .menu_container_box:hover .menu_container_content_check {
+  display: block;
   visibility: visible;
   animation: delayCheck 0.5s ease-in-out;
   overflow: hidden;
@@ -1611,6 +1611,8 @@ p {
   text-align: center;
   border-radius: 100%;
   font-weight: bolder;
+  position: relative;
+  top: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
