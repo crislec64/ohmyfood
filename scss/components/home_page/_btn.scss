@@ -35,7 +35,7 @@
 
 .fonctionnement_btn {
     @include btn;
-    background-image: $background-reservation;
+    background-color: $background-reservation;
     border-radius: $bd-rad_fonct;
     color: $black;
     display: flex;

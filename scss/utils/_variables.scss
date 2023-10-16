@@ -4,21 +4,21 @@ $color-secondary: #ff79da;
 $color-icon: #353535;
 $icon: #7e7e7e;
 $white: white; // loading-container, 
-
+$color_transp: transparent;
 
 /*  **************  background  ************/
 $background-localisation: #eaeaea;
 $background-reservation: #f6f6f6;
-$background-localisation_text: transparent;
 $background-footer: #353535;  //loading-box
 $background-line: #99e2d0;
+$background-label:#99e2d0;
 /*  **************  gradient : button & heart  ************/
 
 $linear-gradient:linear-gradient(to top, $color-primary -11.44%, $color-secondary 123.93%);
 $linear-gradient-light:linear-gradient(to top,lighten($color-primary,5%) -11.44%, lighten( $color-secondary, 5%) 123.93%);
 
 /*  **************  label  ************/
-$background-label:#99e2d0;
+
 $color-label:#008766;
 
 /*  **************    shadow    ***************/
@@ -42,5 +42,3 @@ $bd-rad-card: 0.938rem 0.938rem 0 0;
 $bd-rad-check:0rem 0.938rem 0.938rem 0rem;
 $bd-rd-menu-container-box:0.938rem;
 
-/* *************** Border-color *************/
-$bd-color_transp: transparent;

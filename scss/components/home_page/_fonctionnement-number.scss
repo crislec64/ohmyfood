@@ -1,7 +1,7 @@
 .number {
     @include box_fonct;
     background-color: $color-primary;
-    border: $bd-color_transp;
+    border: $color_transp;
     border-radius: $bd-rad-circle;
     color: $white;
     position: relative;
