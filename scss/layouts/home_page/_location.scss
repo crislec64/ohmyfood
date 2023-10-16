@@ -1,20 +1,20 @@
 .localisation {
     @include box;
-    gap: 1.063rem;
     background-color: $background-localisation;
+    gap: 1.063rem;
     height: 3.125rem;
     margin-top: 0.25rem;
 
     &__text {
-        width: 9rem;
+        color: $icon;  
         background-color: $background-localisation_text;
         border-color: $bd-color_transp;  
-        color: $icon;  
+        width: 9rem;
     }
 
     &>i {
-        margin-right: 0.625rem;
         color: $icon;  
+        margin-right: 0.625rem;
     }
     
     :focus-visible {

@@ -1,18 +1,18 @@
 .reservation_btn {
     @include btn;
-    border-radius: $bd-rad;
     background-image: $linear-gradient;
+    border-radius: $bd-rad;
     color: $white;
     height: 3.125rem;
-    width: 13.625rem;
     position: relative;
+    width: 13.625rem;
     z-index: 1;
 
     &:hover {
         @include shadow-reservation;
-        transform: scale(1.01);
         background-image: $linear-gradient-light;
-
+        transform: scale(1.01);
+        
         &::after {
             opacity: 1;
         }
@@ -20,51 +20,56 @@
 
     &::after {
         content: "";
-        position: absolute;
+        background-image: $linear-gradient-light;
         border-radius: $bd-rad;
+        position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: $linear-gradient-light;
-        opacity: 0;
-        z-index: -1;
+        opacity: 0;        
         transition: opacity 250ms;
+        z-index: -1;
     }
 }
 
 .fonctionnement_btn {
-    display: flex;
     @include btn;
-    border-radius: $bd-rad_fonct;
-    width: 20.155rem;
     background-image: $background-reservation;
+    border-radius: $bd-rad_fonct;
+    color: $black;
+    display: flex;
     height: 4.5rem;
     margin-left: 0.75rem;
-    color: $black;
+    width: 20.125rem;
 
-    @media (64em <=width <=90em) {
+    @media (23.438em >=width) {
+        width: 17.4rem;
+        height: 4rem;
+    }
+    @media (width >=48em) {
+        
+        width: 30.125rem;
+    }
+    @media (width >=64em) {
         width: 18rem;
     }
 
-    @media (width <=90em) {
+    @media (width >=90em) {
         width: 20.155rem;
     }
-
 }
 
 .btn_menu {
-    display: flex;
     @include btn;
+    background-color: $white;
     border-radius: $bd-radius_menu;
     box-shadow: $shadow_menu;
-    background-color: $white;
+    display: flex;
     height: 4.313rem;
     margin-left: 0.75rem;
-    z-index: 1;
     position: relative;
-
-    
+    z-index: 1; 
     }
 
 

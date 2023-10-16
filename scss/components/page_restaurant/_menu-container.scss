@@ -1,230 +1,95 @@
 .menu {
-    position: relative;
-    z-index: 1;
-    top: -3.25rem;
-    margin-bottom: -3.25rem;
-
-    @media (48em <=width) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: calc(100% - 40%);
-        left: 6rem;
-
-    }
-
-    @media (width >=90em) {
-        left: 12rem;
-
-    }
-
-    @media (width >=64em) {
-        left: 8rem;
-
-    }
-
-    &_restaurant {
-
-        padding: 2rem 0 0 1.063rem;
-
-        @media (48em <=width) {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 24px;
-        }
-
-        &_heart {
-            @include box;
-            position: relative;
-            justify-content: flex-end;
-            top: -1rem;
-            margin-right: 3rem;
-            z-index: 1;
-            
-
-            
-            @media (48em <=width) {
-                top: 0;
-
-            }
-
-
-        }
-
-    }
-
     &_container {
-
-        gap: 0.75rem;
-
-
         &_box {
             @include box;
-            justify-content: space-between;
-
-
-            // bouton vert colle bordure : padding 
-            padding: 0 0 0 0.938rem;
-            border-radius: 0.938rem;
             animation: delay 250ms cubic-bezier(0.25, 0.45, 0.55, 0.95) both;
-
-
+            border-radius: $bd-rd-menu-container-box;
+            justify-content: space-between;
+            padding: 0 0 0 0.938rem;
+        
             &:hover {
-
-
-
                 .menu_container_content {
-                    // @include box_fonct;
                     display: block;
-                    overflow: hidden;
                     min-width: calc(95% - 5.376rem);
+                    overflow: hidden;         
                     transition: min-width .5s ease-in-out;
 
-                }
+                    &_price{
+                        @include box_fonct;
+                        align-items: center;
+                        min-width: 1.688rem;
+                        height: 4.313rem;
+                        padding: 0 10px 0 10px;
+                        animation: delayCheck .5s ease-in-out;
+                    }
 
-                .menu_container_content_price {
-                    @include box_fonct;
-                    align-items: center;
-                    min-width: 1.688rem;
-                    height: 4.313rem;
-                    padding: 0 10px 0 10px;
-                    animation: delayCheck .5s ease-in-out;
+                    &_check{
+                        visibility: visible;
+                        animation: delayCheck .5s ease-in-out;
+                        overflow: hidden;
+                        z-index: 0;
+                    }
                 }
-
-                .menu_container_content_check {
-                    @include box_fonct;
-                    color: $white;
-                    align-items: center;
-                    visibility: visible;
-                    min-width: 3.688rem;
-                    animation: delayCheck .5s ease-in-out;
-                    overflow: hidden;
-                }
+                
             }
         }
-
         &_content {
-            //@include box_fonct;
             height: 100%;
             min-width: calc(100% - 2.626em);
             overflow: hidden;
-
-
-
-
-
+            position: relative;
             &>h4 {
+                @include overflow;
                 display: block;
                 margin: 0;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
                 position: relative;
-                top: 23%;
+                top: 1rem;
 
                 @media ( width<= 23.5em){
-                    font-size: .8rem;
+                    font-size: 1rem;
                 }
             }
 
             &>p {
-                font-size: 15.043px;
+                @include overflow;
                 margin-bottom: unset;
                 margin-top: unset;
                 padding-right: 0.5rem;
-                transition-duration: .5s;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
                 position: relative;
+                transition-duration: .5s;
                 top: 30%;
-                @media ( width<= 23.5em){
-                    font-size: .7rem;
-                }
-
-
+                position: relative;
+                top: 1.3rem;
+                
             }
 
             &_price {
                 @include box_fonct;
                 align-items: center;
-                width: 2.626rem;
                 height: 4.313rem;
-
-
-
-
+                position: relative;
+                width: 2.626rem;   
             }
-
-            &_check {
-                @include box_fonct;
-                border-radius: 0 0.938rem 0.938rem 0;
-                z-index: 0;
-                align-items: center;
-                overflow: hidden;
-
-                &>.fa-circle-check {
-
-                    color: $white;
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    border-radius: 100%;
-                    font-weight: bolder;
-                    
-
-                }
-
-            }
-
-        }
-
-
-
-
-
-
-
-    }
-
-    &_title {
-        position: relative;
-        animation: delay 750ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        transform: scale(0);
-
-    }
-
-    &_section {
-        margin: 0 0.813rem 0 0.813rem;
-
-        @media (48em <=width) {
-            min-width: 70%;
-            overflow: hidden;
         }
     }
-}
+} 
 
 .delay {
     @include delay;
 
     &_1 {
-
         animation-delay: 250ms;
     }
 
     &_2 {
-
         animation-delay: 360ms;
     }
 
     &_3 {
-
         animation-delay: 450ms;
     }
 
     &_4 {
-
         animation-delay: 550ms;
     }
 
@@ -233,42 +98,34 @@
     }
 
     &_5 {
-
         animation-delay: 2s;
     }
 
     &_6 {
-
         animation-delay: 2.25s;
     }
 
     &_7 {
-
         animation-delay: 2.35s;
     }
 
     &_8 {
-
-        animation-delay: 2.45s;
+      animation-delay: 2.45s;
     }
 
     &_9 {
-
         animation-delay: 3s;
     }
 
     &_10 {
-
         animation-delay: 3250ms;
     }
 
     &_11 {
-
         animation-delay: 3350ms;
     }
 
     &_12 {
-
         animation-delay: 3450ms;
     }
 }

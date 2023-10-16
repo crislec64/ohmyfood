@@ -1,0 +1,13 @@
+.entete {
+    display: flex;
+    max-height: 25rem;
+    min-width: 100%;
+    object-fit: cover;
+    width: 100%;
+
+
+    &>img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

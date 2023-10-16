@@ -3,15 +3,15 @@ $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-icon: #353535;
 $icon: #7e7e7e;
-$white: white;
+$white: white; // loading-container, 
 
 
 /*  **************  background  ************/
 $background-localisation: #eaeaea;
 $background-reservation: #f6f6f6;
 $background-localisation_text: transparent;
-$background-footer: #353535;
-$background-uppercase: #99e2d0;
+$background-footer: #353535;  //loading-box
+$background-line: #99e2d0;
 /*  **************  gradient : button & heart  ************/
 
 $linear-gradient:linear-gradient(to top, $color-primary -11.44%, $color-secondary 123.93%);
@@ -36,6 +36,11 @@ $bd-rad: 1.563rem;       //25px
 $bd-rad_fonct: 1.25rem;  //20px
 $bd-rad_img:1.125rem;    //18px
 $bd-radius_menu: 0.938rem; //15px
+$bd-rad-loader: 50%;
+$bd-rad-circle: 100%;
+$bd-rad-card: 0.938rem 0.938rem 0 0;
+$bd-rad-check:0rem 0.938rem 0.938rem 0rem;
+$bd-rd-menu-container-box:0.938rem;
 
 /* *************** Border-color *************/
 $bd-color_transp: transparent;

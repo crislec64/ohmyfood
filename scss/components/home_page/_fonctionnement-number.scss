@@ -1,19 +1,26 @@
 .number {
     @include box_fonct;
-    position: relative;
-    border-radius: 100%;
     background-color: $color-primary;
-    color: white;
     border: $bd-color_transp;
-    padding: 0.318rem 0 0.273rem 0.5rem;
-    z-index: 1;
+    border-radius: $bd-rad-circle;
+    color: $white;
+    position: relative;
     height: 1.5rem;
+    left: 1.5rem;  
+    padding: 0.318rem 0 0.273rem 0.5rem;
     width: 1.5rem;
-    left: 0.6rem;
-    @media (64em >=width >=48em) {
-        left: 1rem;
-    }
+    z-index: 1;
+
     @media (width <=23.438em) {
+        left: 1.5rem; 
+    }
+    @media (width >=48em) {
+        //left: 3.5rem;
+    }
+    @media (width >=64em) {
+        left: 2rem;
+    }
+    @media (width >=90em) {
         left: 2rem;
     }
     

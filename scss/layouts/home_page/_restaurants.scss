@@ -9,18 +9,20 @@
         @media (64em <=width) {
             padding-left: 10%;
         }
+
         @media (64em >=width >=48em) {
             display: flex;
             flex-direction: column;
+        }
     }
-    }
-    &-title {
 
-        margin-left: 1.25rem;
-        margin-bottom: 1.25rem;
+    &-title {
+        margin:0 0 1.25rem 1.25rem;
+
         @media (64em >=width >=48em) {
             margin-left: 12.2rem;
         }
+
         @media (width >=64em) {
             margin-left: 9.7rem;
         }
@@ -29,27 +31,26 @@
 
     &-cards {
         @include box_fonct;
-        margin: 0 0 0 1.063rem;
         gap: 1.125rem;
+        margin: 0 0 0 1.063rem;
 
         @media (64em<=width) {
             flex-direction: row;
             gap: unset;
-            position: relative;
             left: -2.5rem;
+            position: relative;
         }
 
         @media (64em >=width >=48em) {
             display: flex;
-            /*    */
             flex-direction: row;
             gap: unset;
         }
-        
+
         &>a {
             @include box_fonct;
+            color: $black;
             text-decoration: none;
-            color: black;
         }
     }
 
@@ -62,20 +63,18 @@
             @media (64em <=width) {
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
                 flex-wrap: wrap;
+                gap: 50px;
                 margin-bottom: 1.875rem;
             }
 
             @media (64em >=width >=48em) {
                 display: flex;
-                /*    */
                 flex-direction: column;
                 gap: 3rem;
                 margin-bottom: 1.875rem;
             }
         }
-
     }
 
     &_heart {
@@ -83,49 +82,56 @@
         margin: unset;
         position: relative;
         z-index: 1;
-        
     }
 
     &_card {
         @include box_fonct;
-        margin: unset;
         background-color: $white;
-        border-radius: 0.938rem;
-
-
-
-
+        border-radius: $bd-radius-menu;
+        margin: unset;
 
         &>img {
-           
-            width: 21.25rem;
+            
+            border-radius: $bd-rad-card;
             height: 10.875rem;
-            border-radius: 0.938rem 0.938rem 0 0;
             object-fit: cover;
+            width: 21.25rem;
+
+            @media (width >=48em) {
+                
+                object-fit: cover;
+                top: 18rem;
+                width: 18rem;
+                height: 8rem;
+            }
 
             @media (width >=64em) {
                 left: -10rem;
+                object-fit: cover;
                 top: 18rem;
-                width: 30.625rem;
-                object-fit: cover;
-                
+                width: 24.625rem;
             }
+
             @media (width <=23.438em) {
-                left: 0rem;
-                //top: 18rem;
-                width: 18rem;
                 height: 8rem;
+                left: 0rem;
                 object-fit: cover;
-                
+                width: 18rem;
             }
-
-
         }
 
         &_1,
         &_3,
         &_4 {
             object-position: 0% 100%;
+            
+            @media (width >=64em) {
+                object-position: 20% 100%; 
+            }
+        
+            @media (width >=90em) {
+                
+            }
         }
 
         &_2 {
@@ -145,22 +151,25 @@
 .hart-resto {
     left: 80%;
     top: -3.5rem;
-    &>.solid{
-        margin-top: -.0001rem;;
+
+    &>.solid {
+        margin-top: -.0001rem;
     }
+
     @media (width <=23.438em) {
         top: -3rem;
-
     }
+
     @media (64em >=width >=48em) {
         left: -5%;
-        top: 13rem;
-
+        top: 10rem;
     }
+
     @media (width >=64em) {
         left: -3rem;
-        top: 13rem;
+        top: 10rem;
     }
+
     @media (width >=90em) {
         left: -3rem;
         top: 13rem;

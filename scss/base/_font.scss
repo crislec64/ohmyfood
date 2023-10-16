@@ -6,47 +6,21 @@ input {
   font-weight: 500;
 }
 
-.location_text {
-  font-weight: normal;
-  font-style: normal;
-}
-
-p {
-  font-size: 1.125em;
-  font-weight: 300;
-  color: $icon;
-  font-style: normal;
-}
-
 h2 {
   font-weight: 700;
-
 }
 
 h3 {
   font-size: 1.125rem;
 }
 
-.reservation_title {
-  &>h2 {
-    @media (width >=64em) {
-      font-size: 2.5rem;
-    }
-  }
-
-}
-
-.restaurants_card-subtitle {
-  font-size: 1.0625rem;
-}
-
-.restaurants_card-label {
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
 .fonctionnement-container_number {
   font-size: 0.886rem;
+}
+.fonctionnement_btn {
+  @media (64rem>=width >=48em) {
+  font-size: 1.2rem;
+  }
 }
 
 input,
@@ -60,12 +34,31 @@ footer {
   color: $white;
 }
 
-.footer_logo {
+.footer_logo,
+.loading-box {
   font-family: 'Shrikhand', sans-serif;
   font-weight: 400;
   line-height: normal;
+}
 
+.label{
+  font-size: 1em;
+}
 
+.loading-text {
+  font-size: 6vw;
+  line-height: 64px;
+  letter-spacing: 0.3rem;
+
+  @media (width <=23.438em) {
+    font-size: 6vw;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.location_text {
+  font-weight: normal;
+  font-style: normal;
 }
 
 .menu {
@@ -75,9 +68,10 @@ footer {
       font-family: 'Shrikhand', sans-serif;
       font-size: 1.75rem;
       font-weight: 400;
+
       @media (width <=23.438em) {
         font-size: 1.4rem;
-    }
+      }
     }
   }
 
@@ -103,16 +97,50 @@ footer {
       &>p {
         font-size: 0.94rem;
         font-weight: 300;
+        
       }
 
       &_price {
         &>p {
           font-size: 0.94rem;
           font-weight: 700;
-          color:$background-footer;
+          color: $background-footer;
+
+          @media ( width<= 23.438em){
+            font-size: .7rem;
+        }
         }
       }
     }
   }
 
+}
+
+p {
+  font-size: 1.125em;
+  font-weight: 300;
+  color: $icon;
+  font-style: normal;
+
+  @media ( width<= 23.438em){
+    font-size: 1rem;
+}
+
+}
+
+.restaurants_card-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.restaurants_card-subtitle {
+  font-size: 1.0625rem;
+}
+
+.reservation_title {
+  &>h2 {
+    @media (width >=64em) {
+      font-size: 2.5rem;
+    }
+  }
 }
