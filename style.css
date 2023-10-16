@@ -379,6 +379,9 @@
 .reservation_p > p {
   margin-block-end: unset;
 }
+.reservation > a {
+  text-decoration: none;
+}
 
 .restaurants {
   display: flex;
