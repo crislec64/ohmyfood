@@ -12,6 +12,7 @@
         min-width: 73.19%;
         width: calc(100% - 40%);
         top: .5rem;
+        margin-bottom: .5rem;
     }
 
     @media (768> width >=425px) {
@@ -21,12 +22,12 @@
 
     @media (width >=1024px) {
         top: 6rem;
-        margin-bottom: 9rem;
+        margin-bottom: 6rem;
     }
 
     @media (width >=1440px) {
         top: 11rem;
-        margin-bottom: 15rem;
+        margin-bottom: 11rem;
     }
 
     &_container {
