@@ -10,7 +10,7 @@
 
     &_box {
         height: 0;
-        
+
         @media (width >=768px) {
             height: 1.125rem;
         }
@@ -19,33 +19,35 @@
     &_hidden {
         margin: unset;
         visibility: hidden;
-
     }
 }
+
 /* *************   label page d'accueil ********** */
 .LB_1 {
-    display: flex;
     align-items: center;
-    padding: unset;
-    width: 80px;
+    display: flex;
     height: 29px;
+    padding: unset;
     right: -16.5rem;
     top: -66rem;
+    width: 80px;
+
     @media (width <375px) {
         right: -14.5rem;
         top: -55rem;
         width: 4rem;
-        
     }
+
     @media (width >=768px) {
         right: -12.5rem;
         top: -27rem;
-        
     }
+
     @media (width >=1024px) {
         right: -16.3rem;
         top: -27rem;
     }
+
     @media (width >=1440px) {
         right: -25rem;
         top: -32rem;
@@ -53,27 +55,25 @@
 }
 
 .LB_2 {
-    display: flex;
     align-items: center;
-    padding: unset;
-    width: 5rem;
+    display: flex;
     height: 1.813rem;
+    padding: unset;
     right: -16.5rem;
     top: -49rem;
+    width: 5rem;
 
     @media (width <375px) {
         right: -14.5rem;
         top: -41rem;
         width: 4rem;
-        
-       
     }
 
     @media (width >=768px) {
         right: -32.5rem;
-        top: -28.1rem;  
+        top: -28.1rem;
     }
-    
+
     @media (width >=1024px) {
         right: -46rem;
         top: -28rem;

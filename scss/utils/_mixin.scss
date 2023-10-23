@@ -70,9 +70,7 @@
 }
 
 @mixin span {
-
     animation-timing-function: cubic-bezier(0, .74, .22, .6);
-
     transform: translatex(0);
     position: relative;
     display: inline-block;
@@ -81,8 +79,7 @@
 }
 
 @mixin overflow {
-    overflow: hidden;
-    
+    overflow: hidden; 
     text-overflow: ellipsis;
     white-space: nowrap; 
 }

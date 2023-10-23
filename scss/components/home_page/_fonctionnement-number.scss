@@ -1,24 +1,22 @@
 .number {
     @include box_fonct;
+    align-items: center;
     background-color: $color-primary;
     border: $color_transp;
     border-radius: $bd-rad-circle;
     color: $white;
     position: relative;
     height: 1.5rem;
+    justify-content: center;
     left: .7rem;  
-    
+    text-align: center;
     width: 1.5rem;
     z-index: 1;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
+  
     @media (width >=1024px) {
         height: 1.3rem;
         width: 1.3rem;
         left: .5rem;
-
     } 
 
     @media (width >=1440px) {

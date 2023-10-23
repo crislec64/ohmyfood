@@ -30,7 +30,6 @@
         &>a {
             color: $white;
             text-decoration: none;
-
         }
 
         &-block {
@@ -65,13 +64,11 @@
 
         :hover {
             transform: scale(1.05);
-
         }
 
         :active {
             background: transparent;
         }
-
     }
 }
 

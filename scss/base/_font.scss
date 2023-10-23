@@ -13,21 +13,25 @@ h2 {
 h3 {
   font-size: 1.125em;
 }
-.fa-arrow-left{
+
+.fa-arrow-left {
   color: $color-icon;
   font-size: 1.4rem;
+
   @media (width <=375px) {
     font-size: 1.2em;
-}
-@media (width >=1440px) {
-  font-size: 1.8em;
-}
+  }
+
+  @media (width >=1440px) {
+    font-size: 1.8em;
+  }
 }
 
 .fonctionnement_btn {
   @media (1024px>=width >=768px) {
     font-size: 1.2em;
   }
+
   @media (1024px<=width) {
     font-size: 1rem;
   }
@@ -57,8 +61,6 @@ footer {
   font-family: 'Shrikhand', sans-serif;
   font-weight: 400;
   line-height: normal;
-
-
 }
 
 .label {
@@ -88,7 +90,6 @@ footer {
 .location_text {
   font-weight: 500;
   font-style: normal;
-
 }
 
 .menu {
@@ -112,7 +113,6 @@ footer {
       font-weight: 300;
       font-style: normal;
     }
-
   }
 
   &_container {
@@ -138,13 +138,11 @@ footer {
 
           @media (width<=375px) {
             font-size: .7em;
-
           }
         }
       }
     }
   }
-
 }
 
 p {
@@ -156,7 +154,6 @@ p {
   @media (width<=375px) {
     font-size: 1em;
   }
-
 }
 
 .restaurants_card-label {
@@ -170,8 +167,6 @@ p {
   font-weight: 300;
 }
 
-
-
 .reservation_title {
   &>h2 {
     @media (width >=1024px) {
@@ -179,12 +174,14 @@ p {
     }
   }
 }
-.number{
+
+.number {
   font-size: .886rem;
 
   @media (width >=1024px) {
     font-size: .63rem;
   }
+
   @media (width >=1440px) {
     font-size: .886rem;
   }
