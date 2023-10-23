@@ -54,8 +54,6 @@
         margin-left: -1.5rem;
     }
 
-    @media (width >=1440px) {}
-
     &_box {
         @include box;
     }
@@ -73,7 +71,6 @@
 
         &:hover,
         &:active {
-
             transform: scale(1.005);
 
             ::before {

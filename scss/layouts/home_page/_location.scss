@@ -3,21 +3,20 @@
     background-color: $background-localisation;
     gap: 1.063rem;
     height: 3.125rem;
-    
     margin-top: 0.25rem;
 
     &__text {
-        color: $color-icon;  
+        color: $color-icon;
         background-color: $color_transp;
-        border-color: $color_transp;  
+        border-color: $color_transp;
         width: 6.813rem;
     }
 
     &>i {
-        color: $icon;  
+        color: $icon;
         margin-right: 0.625rem;
     }
-    
+
     :focus-visible {
         outline: transparent;
     }

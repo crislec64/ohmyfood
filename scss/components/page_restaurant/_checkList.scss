@@ -10,21 +10,14 @@
     overflow: hidden;
     visibility: hidden;
     
-
     &>.fa-circle-check {
-
+        border-radius: $bd-rad-circle;
         color: $white;
         display: flex;
-        justify-content: center;
-        text-align: center;
-        border-radius: $bd-rad-circle;
         font-weight: bolder;
+        justify-content: center;
         position: relative;
+        text-align: center;
         top: 1.8rem;
-
     }
-
-
-
-
 }

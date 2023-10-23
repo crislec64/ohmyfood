@@ -9,12 +9,11 @@
         color: transparent;
         opacity: 1;
         
-
         &::before {
             background-clip: text;
             background-image: linear-gradient(to top,$color-secondary  -15.44%, $color-primary 120.93%);
-            -webkit-background-clip: text;
             color: transparent;   
+            -webkit-background-clip: text;
         }
     }  
 }

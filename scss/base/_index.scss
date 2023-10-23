@@ -4,13 +4,14 @@ body {
     flex-direction: column;
 }
 
-.body_menu{
+.body_menu {
     @media (width >=768px) {
-    align-items: center;
-    margin: unset;
-    margin-block: unset;
+        align-items: center;
+        margin: unset;
+        margin-block: unset;
     }
 }
+
 h2 {
     margin-block: unset;
 }
@@ -27,8 +28,8 @@ footer {
         min-width: 100%;
     }
 
-    @media (width >= 768px) {
+    @media (width >=768px) {
         justify-content: flex-end;
-        height: 8rem;       
-      }
+        height: 8rem;
+    }
 }

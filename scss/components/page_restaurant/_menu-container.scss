@@ -1,5 +1,5 @@
 .menu {
-    
+
     &_container {
         &_box {
             @include box;
@@ -7,39 +7,40 @@
             border-radius: $bd-rd-menu-container-box;
             justify-content: space-between;
             padding: 0 0 0 0.938rem;
-        
+
             &:hover {
                 .menu_container_content {
                     display: block;
                     min-width: calc(95% - 5.376rem);
-                    overflow: hidden;         
+                    overflow: hidden;
                     transition: min-width .5s ease-in-out;
 
-                    &_price{
+                    &_price {
                         @include box_fonct;
                         align-items: center;
-                        min-width: 1.688rem;
                         height: 4.313rem;
+                        min-width: 1.688rem;
                         padding: 0 10px 0 10px;
                         animation: delayCheck .5s ease-in-out;
                     }
 
-                    &_check{
+                    &_check {
                         display: block;
                         visibility: visible;
-                        animation: delayCheck .5s ease-in-out;
                         overflow: hidden;
                         z-index: 0;
+                        animation: delayCheck .5s ease-in-out;
                     }
                 }
-                
             }
         }
+
         &_content {
             height: 100%;
             min-width: calc(100% - 2.626em);
             overflow: hidden;
             position: relative;
+
             &>h4 {
                 @include overflow;
                 display: block;
@@ -47,7 +48,7 @@
                 position: relative;
                 top: 1rem;
 
-                @media ( width<= 375px){
+                @media (width<=375px) {
                     font-size: 1rem;
                 }
             }
@@ -62,7 +63,6 @@
                 top: 30%;
                 position: relative;
                 top: 1.3rem;
-                
             }
 
             &_price {
@@ -70,11 +70,11 @@
                 align-items: center;
                 height: 4.313rem;
                 position: relative;
-                width: 2.626rem;   
+                width: 2.626rem;
             }
         }
     }
-} 
+}
 
 .delay {
     @include delay;
@@ -112,7 +112,7 @@
     }
 
     &_8 {
-      animation-delay: 2.45s;
+        animation-delay: 2.45s;
     }
 
     &_9 {

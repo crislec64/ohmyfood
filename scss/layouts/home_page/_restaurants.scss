@@ -34,19 +34,19 @@
 
     &-cards {
         @include box_fonct;
-        
+
         margin: 0 0 0 1.063rem;
 
         @media (1024px<=width) {
             flex-direction: row;
-           
+
             margin-left: unset;
         }
 
         @media (1024px >=width >=768px) {
             display: flex;
             flex-direction: row;
-           
+
         }
 
         &>a {
@@ -87,7 +87,6 @@
         background-color: $white;
         border-radius: $bd-radius-menu;
         margin: 0 0 1.125rem 0;
-
 
         &>img {
 
@@ -137,16 +136,17 @@
             @media (width >=1440px) {}
         }
 
-
         &_2 {
             object-position: 38% 60%;
         }
 
-        &_3{
+        &_3 {
             object-position: 50% 80%;
         }
-        &_4{
+
+        &_4 {
             object-position: 38% 62%;
+
             @media (width >=1024px) {
                 object-position: 20% 70%;
             }
@@ -155,8 +155,6 @@
         &-title {
             margin: 1rem 0 0 0.813rem;
         }
-
-        
 
         &-subtitle {
             margin: 0.313rem 0 0.75rem 0.813rem;
@@ -201,6 +199,7 @@
     @media (width >=1024px) {
         margin-left: 6.25rem;
     }
+
     @media (width >=1440px) {
         margin-left: 6.25rem;
     }

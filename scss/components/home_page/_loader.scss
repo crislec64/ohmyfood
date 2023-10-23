@@ -7,29 +7,27 @@
     overflow: hidden;
     width: 100%;
     z-index: 10;
-   
+
     .loading-container {
         color: $white;
-        margin: 0 0 0 3rem;
-        max-width: 73%;
+        position: relative;
         text-align: center;
         top: 50%;
-        position: relative;
         width: 100%;
 
         &:before {
             content: '';
-            animation: movingLine 4s infinite ease-in-out;
+            animation: movingLine 4s infinite ease-in-out both;
             background: $linear-gradient left/0% 100% no-repeat;
             border-radius: $bd-rad-loader;
             height: 3px;
             margin-top: 80px;
             position: absolute;
-            width: 80%;       
-            }      
+
+        }
     }
 
-    .loading-text {       
+    .loading-text {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 32px;
@@ -41,43 +39,44 @@
         .span_5,
         .span_6,
         .span_7,
-        .span_8{
-           
+        .span_8 {
             @include span;
         }
+
         .span_1 {
             animation: moveLetters_1 4s infinite;
             transform-origin: 40% 80%;
         }
 
         .span_2 {
-            animation: moveLetters_2 4s infinite;   
+            animation: moveLetters_2 4s infinite;
         }
 
         .span_3 {
             animation: moveLetters_3 4s infinite;
-
         }
 
         .span_4 {
-            animation: moveLetters_4 4s infinite;    
+            animation: moveLetters_4 4s infinite;
         }
 
         .span_5 {
-            animation: moveLetters_5 4s infinite;         
+            animation: moveLetters_5 4s infinite;
         }
+
         .span_6 {
-            animation: moveLetters_6 4s infinite;   
+            animation: moveLetters_6 4s infinite;
         }
 
         .span_7 {
-            animation: moveLetters_7 4s infinite;  
+            animation: moveLetters_7 4s infinite;
         }
 
         .span_8 {
-            animation: moveLetters_8 4s infinite;  
-        }   
+            animation: moveLetters_8 4s infinite;
+        }
     }
+
     @for $i from 1 through 8 {
         .loading-text span:nth-child(#{$i}) {
             animation-delay: $i * 0.1s;
@@ -106,17 +105,17 @@
             @media (width >=768px) {
                 height: 2.5rem;
                 width: 2.5rem;
-              }
+            }
 
             @media (width >=1024px) {
                 height: 3rem;
                 width: 3rem;
-              }
+            }
 
             @media (width >=1440px) {
                 height: 4rem;
                 width: 4rem;
-              }
+            }
         }
     }
 }

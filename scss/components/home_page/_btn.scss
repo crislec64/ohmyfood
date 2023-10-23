@@ -12,7 +12,7 @@
         @include shadow-reservation;
         background-image: $linear-gradient-light;
         transform: scale(1.01);
-        
+
         &::after {
             opacity: 1;
         }
@@ -27,7 +27,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        opacity: 0;        
+        opacity: 0;
         transition: opacity 250ms;
         z-index: -1;
     }
@@ -47,12 +47,15 @@
         width: 17rem;
         height: 4rem;
     }
+
     @media (width >=425px) {
         width: 100%;
     }
+
     @media (width >=768px) {
         width: 38rem;
     }
+
     @media (width >=1024px) {
         width: 14.25rem;
     }
@@ -71,6 +74,5 @@
     height: 4.313rem;
     margin-left: 0.75rem;
     position: relative;
-    z-index: 1; 
-
-    }
+    z-index: 1;
+}
