@@ -1,50 +1,52 @@
 .restaurants {
     @include box;
     background-color: $background-reservation;
-    padding-top: 3.375rem;
+    padding: 3.375rem 0 3rem 0;
+
+    @media (width >=768px) {
+        padding-bottom: unset;
+    }
 
     &_box {
         @include box_fonct;
 
-        @media (64em <=width) {
+        @media (1024px <=width) {
             padding-left: 10%;
         }
 
-        @media (64em >=width >=48em) {
+        @media (1024px >=width >=768px) {
             display: flex;
             flex-direction: column;
+        }
+
+        @media (width >=1024px) {
+            padding-left: unset;
         }
     }
 
     &-title {
-        margin:0 0 1.25rem 1.25rem;
+        margin: 0 0 1.25rem 1.25rem;
 
-        @media (64em >=width >=48em) {
-            margin-left: 12.2rem;
+        @media (width >=1024px) {
+            margin-left: unset;
         }
-
-        @media (width >=64em) {
-            margin-left: 9.7rem;
-        }
-
     }
 
     &-cards {
         @include box_fonct;
-        gap: 1.125rem;
+        
         margin: 0 0 0 1.063rem;
 
-        @media (64em<=width) {
+        @media (1024px<=width) {
             flex-direction: row;
-            gap: unset;
-            left: -2.5rem;
-            position: relative;
+           
+            margin-left: unset;
         }
 
-        @media (64em >=width >=48em) {
+        @media (1024px >=width >=768px) {
             display: flex;
             flex-direction: row;
-            gap: unset;
+           
         }
 
         &>a {
@@ -60,19 +62,15 @@
         width: 100%;
 
         &_box {
-            @media (64em <=width) {
+            @media (1024px <=width) {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                gap: 50px;
-                margin-bottom: 1.875rem;
             }
 
-            @media (64em >=width >=48em) {
+            @media (1024px >=width >=768px) {
                 display: flex;
                 flex-direction: column;
-                gap: 3rem;
-                margin-bottom: 1.875rem;
             }
         }
     }
@@ -88,59 +86,77 @@
         @include box_fonct;
         background-color: $white;
         border-radius: $bd-radius-menu;
-        margin: unset;
+        margin: 0 0 1.125rem 0;
+
 
         &>img {
-            
+
             border-radius: $bd-rad-card;
-            height: 10.875rem;
+            height: 10.688rem;
             object-fit: cover;
             width: 21.25rem;
 
-            @media (width >=48em) {
-                
+            @media (width >=768px) {
+
                 object-fit: cover;
                 top: 18rem;
                 width: 18rem;
                 height: 8rem;
             }
 
-            @media (width >=64em) {
-                left: -10rem;
+            @media (width >=1024px) {
+
                 object-fit: cover;
                 top: 18rem;
-                width: 24.625rem;
+                width: 22.162rem;
             }
 
-            @media (width <=23.438em) {
+            @media (width <375px) {
                 height: 8rem;
                 left: 0rem;
                 object-fit: cover;
                 width: 18rem;
             }
+
+            @media (width >=1440px) {
+
+                object-fit: cover;
+                top: 18rem;
+                width: 30.625rem;
+                height: 10.875rem;
+            }
         }
 
-        &_1,
-        &_3,
-        &_4 {
-            object-position: 0% 100%;
-            
-            @media (width >=64em) {
-                object-position: 20% 100%; 
+        &_1 {
+            object-position: 0% 70%;
+
+            @media (width >=1024px) {
+                object-position: 20% 70%;
             }
-        
-            @media (width >=90em) {
-                
-            }
+
+            @media (width >=1440px) {}
         }
+
 
         &_2 {
+            object-position: 38% 60%;
+        }
+
+        &_3{
+            object-position: 50% 80%;
+        }
+        &_4{
             object-position: 38% 62%;
+            @media (width >=1024px) {
+                object-position: 20% 70%;
+            }
         }
 
         &-title {
             margin: 1rem 0 0 0.813rem;
         }
+
+        
 
         &-subtitle {
             margin: 0.313rem 0 0.75rem 0.813rem;
@@ -149,29 +165,43 @@
 }
 
 .hart-resto {
-    left: 80%;
-    top: -3.5rem;
+    right: -18.313rem;
+    top: -3.8rem;
 
     &>.solid {
         margin-top: -.0001rem;
     }
 
-    @media (width <=23.438em) {
-        top: -3rem;
+    @media (width <375px) {
+        left: 15.9rem;
     }
 
-    @media (64em >=width >=48em) {
+    @media (1024px >=width >=768px) {
         left: -5%;
         top: 10rem;
     }
 
-    @media (width >=64em) {
+    @media (width >=1024px) {
         left: -3rem;
         top: 10rem;
     }
 
-    @media (width >=90em) {
-        left: -3rem;
+    @media (width >=1440px) {
+        left: -2.8rem;
         top: 13rem;
+    }
+
+    &>.fa-xl {
+        font-size: 1.313rem;
+
+    }
+}
+
+.position {
+    @media (width >=1024px) {
+        margin-left: 6.25rem;
+    }
+    @media (width >=1440px) {
+        margin-left: 6.25rem;
     }
 }

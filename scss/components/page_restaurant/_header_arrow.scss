@@ -1,18 +1,37 @@
 .header {
     &_arrow {
-        @media (width <=23.438em) {
-            position: relative;
-            top: .5rem;
-        }
+        position: relative;
+        margin-left: -3.437rem;
 
+        @media (width <=320px) {
+            position: relative;
+            left: -1.675rem;
+        }
+        @media (width >=425px) {
+            position: relative;
+            left: -2rem;
+        }
+        @media (width >=768px) {
+            position: relative;
+            left: -11rem;
+        }
+        @media (width >=1024px) {
+            position: relative;
+            left: -20rem;
+        }
+        @media (width >=1440px) {
+            position: relative;
+            left: -32rem;
+        }
         :active {
             color: $white;
         }
 
         &>.fa-2x {
-            @media (width <=23.438em) {
+            @media (width <=375px) {
                 font-size: 1.4em;
             }
+            
         }
     }
 
@@ -25,15 +44,14 @@
             align-items: center;
             display: flex;
             height: 3.938rem;
-            width: 45%;
+            
 
-            @media (width >=90em) {
+            @media (width >=1440px) {
                 height: 6rem;
             }
-            @media (width >=48em) {
+            @media (width >=768px) {
                 height: 5rem;
             }
         }
-        
     }
 }
