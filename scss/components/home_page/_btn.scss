@@ -39,23 +39,25 @@
     border-radius: $bd-rad_fonct;
     color: $black;
     display: flex;
-    height: 4.5rem;
-    margin-left: 0.75rem;
-    width: 20.125rem;
+    height: 4.525rem;
+    padding-inline: unset;
+    width: 20.155rem;
 
-    @media (23.438em >=width) {
-        width: 17.4rem;
+    @media (375px >width) {
+        width: 17rem;
         height: 4rem;
     }
-    @media (width >=48em) {
-        
-        width: 30.125rem;
+    @media (width >=425px) {
+        width: 100%;
     }
-    @media (width >=64em) {
-        width: 18rem;
+    @media (width >=768px) {
+        width: 38rem;
+    }
+    @media (width >=1024px) {
+        width: 14.25rem;
     }
 
-    @media (width >=90em) {
+    @media (width >=1440px) {
         width: 20.155rem;
     }
 }
@@ -70,6 +72,5 @@
     margin-left: 0.75rem;
     position: relative;
     z-index: 1; 
+
     }
-
-

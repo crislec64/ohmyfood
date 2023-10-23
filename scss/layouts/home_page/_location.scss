@@ -3,13 +3,14 @@
     background-color: $background-localisation;
     gap: 1.063rem;
     height: 3.125rem;
+    
     margin-top: 0.25rem;
 
     &__text {
-        color: $icon;  
+        color: $color-icon;  
         background-color: $color_transp;
         border-color: $color_transp;  
-        width: 9rem;
+        width: 6.813rem;
     }
 
     &>i {

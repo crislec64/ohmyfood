@@ -4,10 +4,50 @@
     min-width: 100%;
     object-fit: cover;
     width: 100%;
-
+    height: 13.25rem;
+    
 
     &>img {
         max-width: 100%;
         object-fit: cover;
+
+        @media (width >=425px) {
+            height: 15.0166rem;
+            width: 100%;
+            
+        }
+        @media (width >=1024px) {
+            height: 25rem;
+            width: 100%;
+            
+        }
+        @media (width >=1440px) {
+            height: 30.625rem;
+            width: 100%;
+            
+        }
+        
+        
+    }
+    &_img_1{
+           
+        object-position: 0px 20%;
+
+        @media (width >=768px) {
+            object-position: 0% 60%;
+        }
+        
+
+        @media (width >=1024px) {
+            object-position: 0% 60%;
+        }
+
+        @media (width >=1440px) {
+            object-position: 0% 50%;
+        }
+    }
+
+    &_2 {
+        object-position: 38% 62%;
     }
 }

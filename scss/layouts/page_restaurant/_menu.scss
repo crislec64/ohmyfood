@@ -1,41 +1,48 @@
 .menu {
     background-color: $background-reservation;
     border-radius: 2.5rem 2.5rem 0 0;
-    margin-bottom: -3.25rem;
+    margin-bottom: -2rem;
     padding-bottom: 2.5rem;
     position: relative;
-    top: -3.25rem;
+    top: -2rem;
     z-index: 1;
 
-    @media (48em <=width) {
+    @media (768px <=width) {
         align-items: center;
         display: flex;
         flex-direction: column;
-        left: 6rem;
         min-width: 73.19%;
         width: calc(100% - 40%);
     }
-
-    @media (width >=64em) {
-        left: 8rem;
+    @media (width >=425px) {
+        top: 0;
+        margin-bottom: 0;
     }
 
-    @media (width >=90em) {
-        left: 12rem;
+    @media (width >=1024px) {
+        top: 9rem;
+        margin-bottom: 9rem;
     }
 
-
+    @media (width >=1440px) {
+        top: 15rem;
+        margin-bottom: 15rem;
+    }
 
     &_container {
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
+        overflow: hidden;
+        padding-bottom: 2.5rem;
+        
     }
 
     &_restaurant {
         padding: 2rem 0 0 1.063rem;
+        margin-bottom: 2.5rem;
 
-        @media (48em <=width) {
+        @media (768px <=width) {
             display: flex;
             flex-direction: row;
             gap: 24px;
@@ -50,7 +57,7 @@
             top: -1rem;
             z-index: 1;
 
-            @media (48em <=width) {
+            @media (768px <=width) {
                 top: 0;
             }
         }
@@ -59,15 +66,13 @@
     &_section {
         margin: 0 0.813rem 0 0.813rem;
 
-        @media (48em <=width) {
+        @media (768px <=width) {
             min-width: 70%;
             overflow: hidden;
         }
-
-        &>h3 {
-            margin-top: 2.5rem;
+        &>h3{
+            margin-top: 0;
         }
-
     }
 
     &_title {
@@ -91,5 +96,4 @@
 .commander {
     display: flex;
     justify-content: center;
-    margin-top: 2.5rem;
 }

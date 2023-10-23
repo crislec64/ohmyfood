@@ -4,6 +4,13 @@ body {
     flex-direction: column;
 }
 
+.body_menu{
+    @media (width >=768px) {
+    align-items: center;
+    margin: unset;
+    margin-block: unset;
+    }
+}
 h2 {
     margin-block: unset;
 }
@@ -11,16 +18,17 @@ h2 {
 footer {
     @include box_fonct;
     background-color: $background-footer;
-    height: 186px;
+    height: 11.625rem;
     min-width: 100%;
 
-    @media (width >=64em) {
+    @media (width >=1024px) {
         align-items: flex-end;
         max-height: 7.125em;
         min-width: 100%;
     }
 
-    @media (width >= 48em) {
-        justify-content: flex-end;       
+    @media (width >= 768px) {
+        justify-content: flex-end;
+        height: 8rem;       
       }
 }

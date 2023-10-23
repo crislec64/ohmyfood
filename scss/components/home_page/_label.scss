@@ -8,21 +8,10 @@
     position: relative;
     z-index: 1;
 
-    @media (64em >=width >=48em) {
-        right: -30rem;
-        top: 20rem;
-    }
-    
-    @media (width <=23.438em) {
-        height: 1.5rem;
-        padding: 0 .5rem;
-    }
-    
-
     &_box {
         height: 0;
         
-        @media (width >=48em) {
+        @media (width >=768px) {
             height: 1.125rem;
         }
     }
@@ -35,42 +24,63 @@
 }
 /* *************   label page d'accueil ********** */
 .LB_1 {
-    right: -14rem;
-    top: -34rem;
-    @media (width <=23.438em) {
-        right: -12rem;
-        top: -28rem;
-    }
-    @media (width >=48em) {
-       right: -42rem;
-        top: -15rem;
+    display: flex;
+    align-items: center;
+    padding: unset;
+    width: 80px;
+    height: 29px;
+    right: -16.5rem;
+    top: -66rem;
+    @media (width <375px) {
+        right: -14.5rem;
+        top: -55rem;
+        width: 4rem;
         
     }
-    @media (width >=64em) {
-        right: -28rem;
-        top: -15rem;
+    @media (width >=768px) {
+        right: -12.5rem;
+        top: -27rem;
+        
+    }
+    @media (width >=1024px) {
+        right: -16.3rem;
+        top: -27rem;
+    }
+    @media (width >=1440px) {
+        right: -25rem;
+        top: -32rem;
     }
 }
 
 .LB_2 {
-    right: -14rem;
-    top: -17rem;
+    display: flex;
+    align-items: center;
+    padding: unset;
+    width: 5rem;
+    height: 1.813rem;
+    right: -16.5rem;
+    top: -49rem;
 
-    @media (width <=23.438em) {
-        right: -12rem;
-        top: -14rem;
+    @media (width <375px) {
+        right: -14.5rem;
+        top: -41rem;
+        width: 4rem;
         
+       
     }
 
-    @media (width >=48em) {
-        right: -17rem;
-        top: -15rem;
-        height: 1rem;
+    @media (width >=768px) {
+        right: -32.5rem;
+        top: -28.1rem;  
     }
     
+    @media (width >=1024px) {
+        right: -46rem;
+        top: -28rem;
+    }
 
-    @media (width >=64em) {
-        right: -50rem;
-        top: -15rem;
+    @media (width >=1440px) {
+        right: -63rem;
+        top: -33rem;
     }
 }

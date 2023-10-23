@@ -4,16 +4,19 @@
         display: flex;
         justify-content: center;
 
+        @media (width >=1440px) {
+            height: 6.019rem;
+        }
         &_item {
             align-items: center;
             display: flex;
             height: 3.938rem;
-            width: 45%;
 
-            @media (width >=90em) {
-                height: 6rem;
+            @media (width >=1440px) {
+                height: 6.019rem;
             }
-            @media (width >=48em) {
+            
+            @media (1440rem >width >=768px) {
                 height: 5rem;
             }
         }

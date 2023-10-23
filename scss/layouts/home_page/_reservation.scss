@@ -8,7 +8,7 @@
     &_title {
        width: 17.188rem;
 
-       @media (width >= 48em) {
+       @media (width >= 768px) {
          width: unset;
        }
  
@@ -21,7 +21,7 @@
        margin-block-end: 1.688rem;
        width: 19.688rem;
 
-       @media (width >= 48em) {
+       @media (width >= 768px) {
          width: auto;
        }
 

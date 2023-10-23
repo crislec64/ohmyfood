@@ -6,44 +6,69 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-left: 1.25rem;
+        margin-left: .6rem;
         margin-bottom: 1.625rem;
         width: 100%;
 
-        @media (width >=48em) {
-            margin-left: 1.2rem;
+        @media (width < 375px) {
+            margin-left: .8rem;
         }
 
-        @media (23.438em >=width) {
-            margin-left: 1.7rem;
+        @media (width >=425px) {
+            margin-left: .5rem;
+        }
+
+        @media (width >=768px) {
+            margin-left: 0.995rem;
+        }
+
+        @media (width >=1024px) {
+            margin-left: -0.7rem;
+        }
+        @media (width >=1440px) {
+            margin-left: -3px;
         }
     }
 }
 
 .container {
     @include box_fonct;
-    align-items: center;
+    align-items: start;
     gap: 1.558rem;
+    padding-block: unset;
+    justify-content: center;
+    align-items: center;
 
-    @media (width >=64rem) {
+    @media (width >=1440px) {
         flex-direction: row;
         justify-content: space-evenly;
-        gap: unset;
+        gap: 36.51px;
+        margin-left: -1rem;
     }
+
+
+    @media (1440px > width >=1024px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 36.51px;
+        margin-left: -1.5rem;
+    }
+
+    @media (width >=1440px) {}
 
     &_box {
         @include box;
     }
 
-    &_content,
-    &_text {
-        @include box;
-        position: relative;
-        z-index: 0;
-        max-width: 90%;
+    &_content {
+        width: 20.125rem;
+    
+        @media (width <375px) {
+            width: 95%;
+        }
 
-        @media (width >=23.438em) {
-            max-width: 100%;
+        @media (width>=768px) {
+            width: 100%;
         }
 
         &:hover,
@@ -55,20 +80,28 @@
                 color: $color-primary;
             }
         }
+    }
+
+    &_text {
+        @include box;
+        position: relative;
+        z-index: 0;
+
+        @media (width <375px) {
+            max-width: 100%;
+        }
 
         &>i {
-            margin-right: 0.625rem;
+            margin-right: 1.688rem;
             color: $icon;
 
-            @media (width >=48rem) {
+            @media (width >=768px) {
                 margin-right: 2rem;
             }
 
-            @media (width >=64rem) {
+            @media (width >=1024px) {
                 margin-right: 1rem;
             }
-
-
         }
     }
 }
