@@ -1407,7 +1407,7 @@ p {
     margin-bottom: 0.5rem;
   }
 }
-@media (768 > width >= 425px) {
+@media (768px > width >= 425px) {
   .menu {
     top: 0;
     margin-bottom: 0;
