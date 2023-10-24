@@ -40,6 +40,7 @@
             min-width: calc(100% - 2.626em);
             overflow: hidden;
             position: relative;
+            padding-left: 1.5rem;
 
             &>h4 {
                 @include overflow;
