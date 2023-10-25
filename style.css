@@ -1650,7 +1650,7 @@ p {
 }
 .menu_container_box:hover .menu_container_content {
   display: block;
-  min-width: calc(95% - 5.376rem);
+  min-width: calc(100% - 5.376rem);
   overflow: hidden;
   transition: min-width 0.5s ease-in-out;
 }
@@ -1681,7 +1681,6 @@ p {
   min-width: calc(100% - 2.626em);
   overflow: hidden;
   position: relative;
-  padding-left: 1.5rem;
 }
 .menu_container_content > h4 {
   overflow: hidden;
@@ -1850,8 +1849,7 @@ p {
   border-radius: 0rem 0.938rem 0.938rem 0rem;
   color: white;
   height: 4.313rem;
-  max-width: fit-content;
-  min-width: 3.688rem;
+  width: 3.688rem;
   overflow: hidden;
   visibility: hidden;
 }
@@ -1880,9 +1878,7 @@ p {
   background-color: white;
   border-radius: 0.938rem;
   box-shadow: 0rem 0.25rem 0.25rem 0.15rem rgba(0, 0, 0, 0.03);
-  display: flex;
   height: 4.313rem;
-  margin-left: 0.75rem;
   position: relative;
   z-index: 1;
 }
