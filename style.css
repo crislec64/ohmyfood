@@ -699,6 +699,11 @@
     max-height: 3.375em;
   }
 }
+@media (768px <= width <= 1024px) {
+  .footer_box {
+    gap: 3rem;
+  }
+}
 @media (width >= 1024px) {
   .footer_box {
     gap: 4.568rem;
@@ -880,6 +885,20 @@ button,
 .footer_label {
   font-size: 1em;
   color: white;
+}
+@media (768px <= width < 1024px) {
+  input,
+  button,
+  .footer_label {
+    font-size: 0.875em;
+  }
+}
+@media (width >= 1024px) {
+  input,
+  button,
+  .footer_label {
+    font-size: 1em;
+  }
 }
 
 footer {
