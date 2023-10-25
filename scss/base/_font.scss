@@ -42,6 +42,15 @@ button,
 .footer_label {
   font-size: 1em;
   color: $white;
+
+  @media (768px <=width < 1024px) {
+    font-size: 0.875em;
+  }
+
+  @media (width >=1024px) {
+    font-size: 1em;
+
+  }
 }
 
 footer {
@@ -69,6 +78,7 @@ footer {
   @media (width <375px) {
     font-size: .85em;
   }
+
 }
 
 .loading-text {

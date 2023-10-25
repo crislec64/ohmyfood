@@ -18,6 +18,9 @@
             flex-direction: row-reverse;
             max-height: 3.375em;
         }
+        @media (768px <= width <=1024px) {
+            gap: 3rem;
+        }
         @media (width >=1024px) {
             gap: 4.568rem;
         }
