@@ -11,7 +11,7 @@
             &:hover {
                 .menu_container_content {
                     display: block;
-                    min-width: calc(95% - 5.376rem);
+                    min-width: calc(100% - 5.376rem);
                     overflow: hidden;
                     transition: min-width .5s ease-in-out;
 
@@ -37,10 +37,10 @@
 
         &_content {
             height: 100%;
-            min-width: calc(100% - 2.626em);
+            min-width: calc(100% - 2.626em);   
             overflow: hidden;
             position: relative;
-            padding-left: 1.5rem;
+           
 
             &>h4 {
                 @include overflow;
@@ -72,6 +72,7 @@
                 height: 4.313rem;
                 position: relative;
                 width: 2.626rem;
+                
             }
         }
     }
