@@ -1166,6 +1166,7 @@ p {
   background-clip: text;
   background-image: linear-gradient(to top, #ff79da -15.44%, #9356dc 120.93%);
   color: transparent;
+  cursor: pointer;
   -webkit-background-clip: text;
 }
 
